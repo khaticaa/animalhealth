@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -511,5 +512,263 @@ nav .nav-o .nright ul .nomre:hover {
   }
   .banner .bannertext .apbutton button {
     font-size: 16px;
+  }
+}
+.event {
+  padding: 80px 0;
+}
+.event .section-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.event .section-subtitle img {
+  max-width: 100%;
+}
+.event .section-subtitle span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4acbbc;
+}
+.event .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.event .section-title strong {
+  color: #4acbbc;
+}
+.event .event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.event .event-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.event .event-card:hover {
+  transform: translateY(-10px);
+}
+.event .card-time {
+  background-color: #ebf8e6;
+  color: #fff;
+  text-align: center;
+  width: 30%;
+  display: flex;
+  flex-direction: row; /* Tarih ve Ay'ı yan yana sırala */
+  align-items: center;
+  justify-content: center;
+}
+.event .card-time .month {
+  font-size: 18px;
+  margin-right: 5px; /* Ay ve tarih arasındaki boşluğu ayarla */
+}
+.event .card-time .date {
+  font-size: 24px;
+  font-weight: 700;
+}
+.event .wrapper {
+  padding: 20px;
+}
+.event .card-content {
+  margin-bottom: 20px;
+}
+.event .card-subtitle {
+  color: #ebf8e6;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.event .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.event .card-text {
+  color: #666;
+}
+.event .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #ebf8e6;
+  color: #ebf8e6;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.event .btn:hover {
+  background-color: #ebf8e6;
+  color: #fff;
+}
+.event .btn-secondary {
+  margin-top: 30px;
+  background-color: #ebf8e6;
+  color: #fff;
+}
+.event .btn-secondary ion-icon {
+  margin-left: 5px;
+}
+
+/* Ekran genişliği 768px'den küçük olduğunda */
+@media screen and (max-width: 768px) {
+  .event-card {
+    text-align: center;
+    flex-direction: column; /* 
+Kart içeriğini ortala */
+    gap: 0px;
+    padding: 0px;
+  }
+  .card-time {
+    flex-direction: column; /* Tarih ve Ay'ı dikey düzende sırala */
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+}
+/* Import Google font - Poppins */
+/* Import Google font - Poppins */
+.tum {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.wrappercarusel {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.wrappercarusel i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrappercarusel i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrappercarusel i:first-child {
+  left: -22px;
+}
+
+.wrappercarusel i:last-child {
+  right: -22px;
+}
+
+.wrappercarusel .caruselslide {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.caruselslide::-webkit-scrollbar {
+  display: none;
+}
+
+.caruselslide.no-transition {
+  scroll-behavior: auto;
+}
+
+.caruselslide.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.caruselslide.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.caruselslide :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caruselslide .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.caruselslide .card .hekimebaxbuttonu {
+  border: none;
+  background-color: #ebf8e6;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.caruselslide .card .img {
+  background-color: #ebf8e6;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.caruselslide .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+.caruselslide .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrappercarusel .caruselslide {
+    grid-auto-columns: calc(50% - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrappercarusel .caruselslide {
+    grid-auto-columns: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
