@@ -771,4 +771,128 @@ Kart içeriğini ortala */
   .wrappercarusel .caruselslide {
     grid-auto-columns: 100%;
   }
+}
+.section3 {
+  background-color: #ebf8e6;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.section3 .section31 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.section3 .section31 .comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.section3 .section31 .comment .com {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section3 .section31 .comment .com span {
+  color: #666;
+  max-width: 400px;
+  text-align: center;
+}
+.section3 .section31 .comment .com .you {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section3 .section31 .comment .com .you h1 {
+  font-size: 25px;
+}
+.section3 .section31 .comment .com .you p {
+  font-size: 15px;
+  color: #f78263;
+}
+.section3 .section31 .comment .com .image {
+  width: 30%;
+  min-width: 100px;
+  min-height: 100px;
+}
+.section3 .section31 .comment .com .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section3 .section31 .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section3 .section31 .video iframe {
+  width: 100%;
+  height: 200px;
+}
+.section3 .section31 .video .tx h1 {
+  font-style: italic;
+  color: #caa499;
+}
+.section3 .section31:hover .video {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.section3 .section31 [data-aos] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.section3 .section31:hover [data-aos] {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section3 .section31 [data-aos=fade-up] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.section3 .section31 [data-aos=fade-left] {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.section3 .section31 [data-aos=fade-right] {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+@media (max-width: 767px) {
+  .video iframe {
+    height: 150px;
+  }
+}
+@media (max-width: 768px) and (max-width: 991px) {
+  .comment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comment .image {
+    width: 100%;
+    max-width: 150px;
+    min-height: 100px;
+  }
+  .comment .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .video iframe {
+    height: 175px;
+  }
 }/*# sourceMappingURL=style.css.map */
