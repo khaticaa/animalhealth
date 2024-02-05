@@ -43,6 +43,26 @@
     width: 100%;
   }
 }
+.aboutaccordion {
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+}
+
+.servivesservis .imageS {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  padding-bottom: 20px;
+}
+.servivesservis .imageS img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.servivesservis .pt-5 a {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
