@@ -1,0 +1,79 @@
+.blogcontent {
+    .merkez{
+        text-align: center;
+    }
+    .blog {
+        .blog-item {
+            border: 1px solid #ddd;
+            .blog-img {
+                // max-width: 0px;
+                padding-top: 20px;
+                width: calc(33.3333% - 20px); //
+                margin: auto;
+                // min-height: 100px;
+                img {
+                    border-radius: 5px;
+                }
+            }
+            .blog-content {
+                .h4 {
+                    font-size: 18px;
+                }
+                .btn {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .blog-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+// .topblog{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+    
+//     .topblogimagesi{
+//         position: relative;
+//         //   max-width: 500px;
+        
+//     }
+//     .texthissesi{
+//         position: absolute;
+//         background-color: #ddd;
+// bottom: 0;
+// max-width: 100%;
+
+
+//     }
+// }
+
+
+// .topblog {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+ 
+
+//     .topblogimagesi {
+//         max-width: 50%; // Resim alanının genişliğini ayarladık
+//         // margin-right: 20px;
+//         position: relative; // Resim ile metin arasındaki boşluğu ayarladık
+//     }
+
+//     .texthissesi {
+//         background-color: #ddd;
+//         padding: 20px; // İçerik alanına dolgular ekledik
+//         max-width: 50%;
+//         position: absolute;
+//         bottom: 0; // Metin alanının genişliğini ayarladık
+//     }
+// }

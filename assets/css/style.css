@@ -100,8 +100,10 @@
 
 .cards {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 50px;
   padding: 50px;
 }
 @media (max-width: 768px) {
@@ -180,7 +182,7 @@
 }
 
 .card:hover .add-to-cart {
-  bottom: 60px;
+  bottom: 20px;
   opacity: 1;
 }
 
@@ -202,6 +204,33 @@
     width: calc(100% - 20px);
   }
 }
+.blogcontent .merkez {
+  text-align: center;
+}
+.blogcontent .blog .blog-item {
+  border: 1px solid #ddd;
+}
+.blogcontent .blog .blog-item .blog-img {
+  padding-top: 20px;
+  width: calc(33.3333% - 20px);
+  margin: auto;
+}
+.blogcontent .blog .blog-item .blog-img img {
+  border-radius: 5px;
+}
+.blogcontent .blog .blog-item .blog-content .h4 {
+  font-size: 18px;
+}
+.blogcontent .blog .blog-item .blog-content .btn {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .blogcontent .blog-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

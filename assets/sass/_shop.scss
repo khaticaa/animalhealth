@@ -40,8 +40,12 @@
 
 .cards {
     display: flex;
+   
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap: 50px;
     padding: 50px;
 
 
@@ -124,7 +128,7 @@ flex-direction: column;
   }
   
   .card:hover .add-to-cart {
-    bottom: 60px;
+    bottom: 20px;
     opacity: 1;
   }
   
