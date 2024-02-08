@@ -1,6 +1,14 @@
 .blogcontent {
+    .p-merkez{
+        margin: auto;
+        max-width: 750px;
+        text-align: center;
+    }
     .merkez{
         text-align: center;
+      p{
+        max-width: 500px;
+      }
     }
     .blog {
         .blog-item {
@@ -21,6 +29,10 @@
                 }
                 .btn {
                     font-size: 14px;
+                }
+
+                a{
+                    text-decoration: none;
                 }
             }
         }

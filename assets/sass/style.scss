@@ -90,7 +90,7 @@ nav {
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px 0px;
+    // padding: 30px 0px;
     // min-height: 110vh;
 
   .carousel-item{
@@ -752,7 +752,7 @@ color: #222222 !important;
   }
 
   .card-subtitle {
-    color: #ebf8e6;
+    // color: #ebf8e6;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -1370,6 +1370,15 @@ color: #222222 !important;
 //   }
 // }
 
+.nav2{
+  position: fixed;
+transition: all 0.5s ease;
+left: -300px;
+  width:300px;
+  background-color: #222222;
+  z-index: 12345;
+}
+
 
 .section3 {
   background-color: #ebf8e6;
@@ -1441,8 +1450,11 @@ color: #222222 !important;
 
       .tx {
         h1 {
-          font-style: italic;
-          color: #caa499;
+          font-size: 20px;
+          // font-style: italic;
+          // color: #caa499;
+          color: #f1714d;
+          // margin-bottom: 20px;
         }
       }
     }

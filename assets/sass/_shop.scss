@@ -39,6 +39,7 @@
 
 
 .cards {
+  // width: 70%;
     display: flex;
    
     align-items: center;
@@ -48,7 +49,83 @@
     gap: 50px;
     padding: 50px;
 
-
+    .card {
+      display: flex;
+      align-items: center;
+  flex-direction: column;
+  // justify-content: center;
+      // position: relative;
+      width: calc(22% - 20px);
+      padding: 20px 0px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  
+      @media (max-width: 768px) {
+                  width: calc(33.33% - 20px);
+              }
+          
+              @media (max-width: 576px) {
+                  width: calc(50% - 20px);
+              }
+    }
+    
+    .img img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .add-to-cart {
+      position: absolute;
+      bottom: -40px;
+      left: 80%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s ease, bottom 0.3s ease;
+    }
+    
+    .add-to-favorites {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      padding: 10px 20px;
+      // background-color: #007bff;
+      
+      // color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s ease, top 0.3s ease, right 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+    }
+    
+    .card:hover .img img {
+      transform: scale(1.1);
+    }
+    
+    .card:hover .add-to-cart {
+      bottom: 20px;
+      opacity: 1;
+    }
+    
+    .card:hover .add-to-favorites {
+      top: 10px;
+      right: 10px;
+      opacity: 1;
+    }
 
     
     @media (max-width: 768px) {
@@ -58,85 +135,87 @@
     @media (max-width: 576px) {
         padding: 20px;
     }
-  }
-  
-  .card {
-    display: flex;
-    align-items: center;
-flex-direction: column;
-// justify-content: center;
-    // position: relative;
-    width: calc(22% - 20px);
-    padding: 20px 0px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
 
-    @media (max-width: 768px) {
-                width: calc(33.33% - 20px);
-            }
+
+  }
+  
+//   .card {
+//     display: flex;
+//     align-items: center;
+// flex-direction: column;
+// // justify-content: center;
+//     // position: relative;
+//     width: calc(22% - 20px);
+//     padding: 20px 0px;
+//     margin-bottom: 20px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     overflow: hidden;
+//     transition: transform 0.3s ease;
+
+//     @media (max-width: 768px) {
+//                 width: calc(33.33% - 20px);
+//             }
         
-            @media (max-width: 576px) {
-                width: calc(50% - 20px);
-            }
-  }
+//             @media (max-width: 576px) {
+//                 width: calc(50% - 20px);
+//             }
+//   }
   
-  .img img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
+//   .img img {
+//     width: 100%;
+//     height: auto;
+//     transition: transform 0.3s ease;
+//   }
   
-  .add-to-cart {
-    position: absolute;
-    bottom: -40px;
-    left: 80%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease, bottom 0.3s ease;
-  }
+//   .add-to-cart {
+//     position: absolute;
+//     bottom: -40px;
+//     left: 80%;
+//     transform: translateX(-50%);
+//     padding: 10px 20px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     opacity: 0;
+//     transition: opacity 0.3s ease, bottom 0.3s ease;
+//   }
   
-  .add-to-favorites {
-    position: absolute;
-    top: -40px;
-    right: -40px;
-    padding: 10px 20px;
-    // background-color: #007bff;
+//   .add-to-favorites {
+//     position: absolute;
+//     top: -40px;
+//     right: -40px;
+//     padding: 10px 20px;
+//     // background-color: #007bff;
     
-    // color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease, top 0.3s ease, right 0.3s ease;
-  }
+//     // color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     opacity: 0;
+//     transition: opacity 0.3s ease, top 0.3s ease, right 0.3s ease;
+//   }
   
-  .card:hover {
-    transform: scale(1.05);
-  }
+//   .card:hover {
+//     transform: scale(1.05);
+//   }
   
-  .card:hover .img img {
-    transform: scale(1.1);
-  }
+//   .card:hover .img img {
+//     transform: scale(1.1);
+//   }
   
-  .card:hover .add-to-cart {
-    bottom: 20px;
-    opacity: 1;
-  }
+//   .card:hover .add-to-cart {
+//     bottom: 20px;
+//     opacity: 1;
+//   }
   
-  .card:hover .add-to-favorites {
-    top: 10px;
-    right: 10px;
-    opacity: 1;
-  }
+//   .card:hover .add-to-favorites {
+//     top: 10px;
+//     right: 10px;
+//     opacity: 1;
+//   }
 
   
 

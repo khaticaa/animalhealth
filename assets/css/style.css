@@ -106,18 +106,7 @@
   gap: 50px;
   padding: 50px;
 }
-@media (max-width: 768px) {
-  .cards {
-    padding: 30px;
-  }
-}
-@media (max-width: 576px) {
-  .cards {
-    padding: 20px;
-  }
-}
-
-.card {
+.cards .card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -130,23 +119,21 @@
   transition: transform 0.3s ease;
 }
 @media (max-width: 768px) {
-  .card {
+  .cards .card {
     width: calc(33.33% - 20px);
   }
 }
 @media (max-width: 576px) {
-  .card {
+  .cards .card {
     width: calc(50% - 20px);
   }
 }
-
-.img img {
+.cards .img img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
 }
-
-.add-to-cart {
+.cards .add-to-cart {
   position: absolute;
   bottom: -40px;
   left: 80%;
@@ -160,8 +147,7 @@
   opacity: 0;
   transition: opacity 0.3s ease, bottom 0.3s ease;
 }
-
-.add-to-favorites {
+.cards .add-to-favorites {
   position: absolute;
   top: -40px;
   right: -40px;
@@ -172,24 +158,30 @@
   opacity: 0;
   transition: opacity 0.3s ease, top 0.3s ease, right 0.3s ease;
 }
-
-.card:hover {
+.cards .card:hover {
   transform: scale(1.05);
 }
-
-.card:hover .img img {
+.cards .card:hover .img img {
   transform: scale(1.1);
 }
-
-.card:hover .add-to-cart {
+.cards .card:hover .add-to-cart {
   bottom: 20px;
   opacity: 1;
 }
-
-.card:hover .add-to-favorites {
+.cards .card:hover .add-to-favorites {
   top: 10px;
   right: 10px;
   opacity: 1;
+}
+@media (max-width: 768px) {
+  .cards {
+    padding: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .cards {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -204,8 +196,16 @@
     width: calc(100% - 20px);
   }
 }
+.blogcontent .p-merkez {
+  margin: auto;
+  max-width: 750px;
+  text-align: center;
+}
 .blogcontent .merkez {
   text-align: center;
+}
+.blogcontent .merkez p {
+  max-width: 500px;
 }
 .blogcontent .blog .blog-item {
   border: 1px solid #ddd;
@@ -224,6 +224,9 @@
 .blogcontent .blog .blog-item .blog-content .btn {
   font-size: 14px;
 }
+.blogcontent .blog .blog-item .blog-content a {
+  text-decoration: none;
+}
 @media (max-width: 767px) {
   .blogcontent .blog-item {
     flex: 0 0 100%;
@@ -238,7 +241,6 @@
   background-image: url("../images/doggy-2000x1199.jpg");
   background-repeat: no-repeat;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -309,7 +311,6 @@ nav .nav-o .nright ul .nomre:hover {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 30px 0px;
 }
 .banner .carousel-item img {
   width: 100% !important;
@@ -827,7 +828,6 @@ nav .nav-o .nright ul .nomre:hover {
   margin-bottom: 20px;
 }
 .event .card-subtitle {
-  color: #ebf8e6;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -1012,6 +1012,15 @@ Kart içeriğini ortala */
     grid-auto-columns: 100%;
   }
 }
+.nav2 {
+  position: fixed;
+  transition: all 0.5s ease;
+  left: -300px;
+  width: 300px;
+  background-color: #222222;
+  z-index: 12345;
+}
+
 .section3 {
   background-color: #ebf8e6;
   width: 100%;
@@ -1078,8 +1087,8 @@ Kart içeriğini ortala */
   height: 200px;
 }
 .section3 .section31 .video .tx h1 {
-  font-style: italic;
-  color: #caa499;
+  font-size: 20px;
+  color: #f1714d;
 }
 .section3 .section31:hover .video {
   transform: scale(1.05);
