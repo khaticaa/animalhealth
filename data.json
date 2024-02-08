@@ -1,5 +1,77 @@
 {
-    "data": [
+    "viewdoctor": [
+        {  
+            "id": 1,
+            "image":"./assets/images/20-1-1.jpg",
         
+            "name": "Dakota Johnston",
+            "job": "CEO & Founder",
+            "email": "dakota@gmail.com",
+            "tel": "+012 (345) 6789",
+            "konum": "205 Main Street, USA",
+            "aboutme": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+            "aboutme2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+            "education": "University of defgtion, fecat complete ME of synage",
+            "career": "After complete engineer join HU Signage Ltd as a project manager",
+            "experience": "About 20 years of experience and professional in signage",
+            "sae": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        },
+        {    "image":"./assets/images/20-1-1.jpg",
+            "id": 2,
+            "name": "Dakota Johnston",
+            "job": "CEO & Founder",
+            "email": "dakota@gmail.com",
+            "tel": "+012 (345) 6789",
+            "konum": "205 Main Street, USA",
+            "aboutme": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+            "aboutme2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+            "education": "University of defgtion, fecat complete ME of synage",
+            "career": "After complete engineer join HU Signage Ltd as a project manager",
+            "experience": "About 20 years of experience and professional in signage",
+            "sae": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        },
+        { "image":"./assets/images/20-1-1.jpg",
+            "id": 3,
+            "name": "Dakota Johnston",
+            "job": "CEO & Founder",
+            "email": "dakota@gmail.com",
+            "tel": "+012 (345) 6789",
+            "konum": "205 Main Street, USA",
+            "aboutme": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+            "aboutme2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+            "education": "University of defgtion, fecat complete ME of synage",
+            "career": "After complete engineer join HU Signage Ltd as a project manager",
+            "experience": "About 20 years of experience and professional in signage",
+            "sae": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        },
+
+        { "image":"./assets/images/20-1-1.jpg",
+            "id": 4,
+            "name": "Dakota Johnston",
+            "job": "CEO & Founder",
+            "email": "dakota@gmail.com",
+            "tel": "+012 (345) 6789",
+            "konum": "205 Main Street, USA",
+            "aboutme": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+            "aboutme2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+            "education": "University of defgtion, fecat complete ME of synage",
+            "career": "After complete engineer join HU Signage Ltd as a project manager",
+            "experience": "About 20 years of experience and professional in signage",
+            "sae": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        },
+        { "image":"./assets/images/20-1-1.jpg",
+            "id": 5,
+            "name": "Dakota Johnston",
+            "job": "CEO & Founder",
+            "email": "dakota@gmail.com",
+            "tel": "+012 (345) 6789",
+            "konum": "205 Main Street, USA",
+            "aboutme": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+            "aboutme2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+            "education": "University of defgtion, fecat complete ME of synage",
+            "career": "After complete engineer join HU Signage Ltd as a project manager",
+            "experience": "About 20 years of experience and professional in signage",
+            "sae": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose."
+        }
     ]
 }
