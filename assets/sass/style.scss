@@ -929,6 +929,7 @@ color: #222222 !important;
   align-items: center;
   justify-content: center;
   min-height: 70vh;
+  
   // background: linear-gradient(to left top, #031A9A, #8B53FF);
 } 
 .wrappercarusel {
@@ -1004,6 +1005,14 @@ color: #222222 !important;
     background-color: #ebf8e6;
     padding: 5px 10px;
     border-radius: 50px;
+
+    a{
+      text-decoration: none;
+      color: #f1714d;
+      // color: #4acbbc;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 800;
+    }
   }
 }
 .caruselslide .card .img {

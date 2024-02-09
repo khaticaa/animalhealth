@@ -16,7 +16,7 @@ fetch(`http://localhost:3000/viewdoctor/${id}`)
         <div class="row justify-content-center">
             <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
                 <div class="card border-0 shadow">
-                    <img src="https://www.bootdey.com/img/Content/avatar/avatar6.png" alt="...">
+                    <img src="${element.image}" alt="...">
                     <div class="card-body p-1-9 p-xl-5">
                         <div class="mb-4">
                             <h3 class="h4 mb-0">${element.name}</h3>
@@ -24,8 +24,8 @@ fetch(`http://localhost:3000/viewdoctor/${id}`)
                         </div>
                         <ul class="list-unstyled mb-4">
                             <li class="mb-3"><a href="#!"><i class="far fa-envelope display-25 me-3 text-secondary"></i>${element.email}</a></li>
-                            <li class="mb-3"><a href="#!"><i class="fas fa-mobile-alt display-25 me-3 text-secondary"></i>+012 (345) 6789</a></li>
-                            <li><a href="#!"><i class="fas fa-map-marker-alt display-25 me-3 text-secondary"></i>205 Main Street, USA</a></li>
+                            <li class="mb-3"><a href="#!"><i class="fas fa-mobile-alt display-25 me-3 text-secondary"></i>${element.tel}</a></li>
+                            <li><a href="#!"><i class="fas fa-map-marker-alt display-25 me-3 text-secondary"></i>${element.konum}/a></li>
                         </ul>
                         <ul class="social-icon-style2 ps-0">
                             <li><a href="#!" class="rounded-3"><i class="fab fa-facebook-f"></i></a></li>
@@ -42,8 +42,8 @@ fetch(`http://localhost:3000/viewdoctor/${id}`)
                         <div class="text-start mb-1-6 wow fadeIn">
                             <h2 class="h1 mb-0 text-primary">#About Me</h2>
                         </div>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
-                        <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                        <p>${element.aboutme}</p>
+                        <p class="mb-0">${element.aboutme2}</p>
                     </div>
                     <div class="mb-5 wow fadeIn">
                         <div class="text-start mb-1-6 wow fadeIn">
@@ -55,7 +55,7 @@ fetch(`http://localhost:3000/viewdoctor/${id}`)
                                     <div class="card-body">
                                         <i class="ti-bookmark-alt icon-box medium rounded-3 mb-4"></i>
                                         <h3 class="h5 mb-3">Education</h3>
-                                        <p class="mb-0">University of defgtion, fecat complete ME of synage</p>
+                                        <p class="mb-0">${element.education}</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ fetch(`http://localhost:3000/viewdoctor/${id}`)
                                     <div class="card-body">
                                         <i class="ti-pencil-alt icon-box medium rounded-3 mb-4"></i>
                                         <h3 class="h5 mb-3">Career Start</h3>
-                                        <p class="mb-0">After complete engineer join HU Signage Ltd as a project manager</p>
+                                        <p class="mb-0">${element.career}</p>
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@ fetch(`http://localhost:3000/viewdoctor/${id}`)
                                     <div class="card-body">
                                         <i class="ti-medall-alt icon-box medium rounded-3 mb-4"></i>
                                         <h3 class="h5 mb-3">Experience</h3>
-                                        <p class="mb-0">About 20 years of experience and professional in signage</p>
+                                        <p class="mb-0">${element.experience}</p>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@ fetch(`http://localhost:3000/viewdoctor/${id}`)
                         <div class="text-start mb-1-6 wow fadeIn">
                             <h2 class="mb-0 text-primary">#Skills &amp; Experience</h2>
                         </div>
-                        <p class="mb-4">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
+                        <p class="mb-4">${element.sae}</p>
                      
                     </div>
                 </div>
