@@ -223,8 +223,22 @@
   gap: 20px;
 }
 
+.pimg {
+  width: 200px;
+}
+.pimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ptxt {
+  width: 70%;
+}
+
 .ptxt h6 {
-  font-size: 1.2rem;
+  font-size: 15px;
+  color: #888;
   margin-bottom: 10px;
 }
 
