@@ -40,7 +40,7 @@ async function getAllCards() {
         ${el.isFavorite ? 
           `
           <div class="add-to-favorites">
-          <div class="fav" onClick="toggleFav(${el.id}, ${el.isFavorite})"><i class="bi bi-heart"></i></div>
+          <div class="fav" onClick="toggleFav(${el.id}, ${el.isFavorite})"><i class="bi bi-heart-fill"></i></div>
        </div>
           ` 
           :  

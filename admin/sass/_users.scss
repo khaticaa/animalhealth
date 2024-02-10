@@ -1,0 +1,109 @@
+// body {
+//     // background: $primary-color;
+//   }
+  
+  //? ---------------> Users Start <---------------
+  
+  .user-wrapper {
+    // background: $primary-color;
+    background-color: #444444;
+    width: 100%;
+    height: calc(100vh - 66px);
+    padding: 20px;
+    @include flex(flex-end, flex-start);
+    flex-direction: column;
+  
+    .user-table {
+      width: calc(100% - 250px);
+      background: #252525;
+      border-radius: 10px;
+      h1 {
+        
+        // background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px 5px 0 0;
+        padding: 5px 10px;
+      }
+      .table-body {
+        width: 100%;
+        height: calc(100vh - 156px);
+        overflow: auto;
+        border-radius: 5px;
+        padding: 5px;
+        &::-webkit-scrollbar {
+          height: 5px;
+        }
+      }
+      table {
+        width: 99%;
+        margin: 10px auto;
+        border-collapse: collapse;
+        background: #444444;
+        border-radius: 5px;
+        overflow: hidden;
+        tr {
+        //   color: $white;
+          &:nth-child(even) {
+            background: #505050;
+          }
+          th {
+            background: rgb(104, 104, 104);
+            text-align: left;
+            padding: 10px;
+          }
+  
+          td {
+            padding: 10px 20px;
+  
+            img {
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+              border-radius: 999px;
+            }
+            button {
+              font-size: 20px;
+            //   color: $white;
+              transition: all 0.5s ease;
+              border-radius: 5px;
+              padding: 10px 15px;
+              &:first-child {
+                // background: $yellow;
+              }
+              &:last-child {
+                background: red;
+              }
+              &:first-child:hover {
+                // color: $yellow;
+                // background: $white;
+              }
+              &:last-child:hover {
+                color: red;
+                background: $white;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            &:hover {
+              background: rgba(255, 255, 255, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  //? ---------------> Users End <---------------
+  
+  @media (max-width: 768px) {
+    
+    .user-wrapper {
+      .user-table {
+        width: 100%;
+      }
+    }
+  }
+  
+  
+  

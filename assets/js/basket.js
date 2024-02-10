@@ -6,22 +6,22 @@ let sorted = "asc";
 let filteredArr = [];
 
 let addCount = async (id, count) => {
-  await axios.patch("http://localhost:3000/baket/"+id, {inBasket : count + 1})
+  await axios.patch("http://localhost:3000/shop/"+id, {inBasket : count + 1})
   window.location.reload()
 }
 
 let removeCount = async (id,count) => {
   if( count  == 1 ){
-    await axios.patch("http://localhost:3000/basket/"+id, {inBasket : null})
+    await axios.patch("http://localhost:3000/shop/"+id, {inBasket : null})
   }else{
-    await axios.patch("http://localhost:3000/basket/"+id, {inBasket : count - 1})
+    await axios.patch("http://localhost:3000/shop/"+id, {inBasket : count - 1})
     window.location.reload();
   }
 
 }
 
 async function getAllCards() {
-  let res = await axios("http://localhost:3000/basket/");
+  let res = await axios.get("http://localhost:3000/shop/");
   let data = await res.data;
   
   filteredArr = filteredArr.length ? filteredArr : data;

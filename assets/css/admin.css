@@ -1,181 +1,72 @@
-.overlay {
-  z-index: 9;
-  position: fixed;
+.user-wrapper {
+  background-color: #444444;
   width: 100%;
-  height: 100%;
-  background-color: black;
-  transition: all 0.5s ease;
-  opacity: 0;
-  pointer-events: none;
-}
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-aside {
-  z-index: 999;
-  background-color: aquamarine;
-  width: 250px;
   height: calc(100vh - 66px);
-  overflow-y: auto;
-  transition: all 0.5s ease;
-  position: fixed;
-  top: 66px;
+  padding: 20px;
+  flex-direction: column;
 }
-aside::-webkit-scrollbar-thumb {
-  background: transparent;
+.user-wrapper .user-table {
+  width: calc(100% - 250px);
+  background: #252525;
+  border-radius: 10px;
 }
-aside:hover::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
+.user-wrapper .user-table h1 {
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
 }
-aside .menu {
+.user-wrapper .user-table .table-body {
+  width: 100%;
+  height: calc(100vh - 156px);
+  overflow: auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+.user-wrapper .user-table .table-body::-webkit-scrollbar {
+  height: 5px;
+}
+.user-wrapper .user-table table {
+  width: 99%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  background: #444444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.user-wrapper .user-table table tr:nth-child(even) {
+  background: #505050;
+}
+.user-wrapper .user-table table tr th {
+  background: rgb(104, 104, 104);
+  text-align: left;
   padding: 10px;
 }
-aside .menu li {
-  border-radius: 5px;
+.user-wrapper .user-table table tr td {
   padding: 10px 20px;
-  transition: all 0.5s ease;
 }
-aside .menu li:hover {
-  background: rgba(255, 255, 255, 0.1);
+.user-wrapper .user-table table tr td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 999px;
 }
-aside .menu li:not(:last-child) {
-  margin-bottom: 5px;
-}
-aside .menu li.active {
-  background: rgba(255, 255, 255, 0.2);
-}
-aside .menu li.active span {
-  font-weight: 500;
-}
-aside .menu li a,
-aside .menu li button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  gap: 8px;
-}
-aside .menu li a span,
-aside .menu li button span {
-  font-size: 17px;
-}
-aside .menu li a i,
-aside .menu li button i {
+.user-wrapper .user-table table tr td button {
   font-size: 20px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  padding: 10px 15px;
 }
-
-.dashboard-wrapper {
-  align-items: flex-start;
-  justify-content: flex-end;
-  display: flex;
+.user-wrapper .user-table table tr td button:last-child {
+  background: red;
 }
-.dashboard-wrapper .dashboard {
-  width: calc(100% - 250px);
-  height: calc(100vh - 66px);
-  background: rgb(255, 255, 255);
-  padding: 20px;
+.user-wrapper .user-table table tr td button:last-child:hover {
+  color: red;
 }
-.dashboard-wrapper .dashboard .graphics {
-  display: flex;
-  gap: 10px;
-}
-.dashboard-wrapper .dashboard .graphics .movies-graphics {
-  width: 50%;
-  padding: 20px;
-  background: #e3e3e3;
-  border-radius: 10px;
-}
-.dashboard-wrapper .dashboard .graphics .movies-graphics .genre-box {
-  padding: 20px;
-}
-.dashboard-wrapper .dashboard .graphics .movies-graphics .genre-box .progress {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.dashboard-wrapper .dashboard .graphics .movies-graphics .genre-box .progress span {
-  font-size: 18px;
-}
-.dashboard-wrapper .dashboard .graphics .movies-graphics .genre-box .progress .progress-bar {
-  position: relative;
-  width: 100%;
-  height: 10px;
-  background: rgb(185, 185, 185);
-  border-radius: 50px;
-}
-.dashboard-wrapper .dashboard .graphics .movies-graphics .genre-box .progress .progress-bar::after {
-  position: absolute;
-  content: "";
-  width: 60%;
-  height: 100%;
-  background: rebeccapurple;
-  border-radius: 50px;
-}
-.dashboard-wrapper .dashboard .graphics .circle-wrapper {
-  background: #e3e3e3;
-  border-radius: 10px;
-  width: 50%;
-  padding: 20px;
-}
-.dashboard-wrapper .dashboard .graphics .circle-wrapper .circle {
-  margin: auto;
-  width: 305px;
-  height: 305px;
-  border-radius: 999px;
-  background-image: conic-gradient(blue 0%, blue 70%, rgb(185, 185, 185) 70%, rgb(185, 185, 185) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dashboard-wrapper .dashboard .graphics .circle-wrapper .circle span {
-  font-size: 80px;
-  background: #e3e3e3;
-  width: 250px;
-  height: 250px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: blue;
-  font-weight: 600;
+.user-wrapper .user-table table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {
-  nav {
-    padding: 10px 15px;
-  }
-  nav .logo img {
-    width: 30px;
-    height: 30px;
-  }
-  nav .logo span {
-    font-size: 20px;
-  }
-  nav .actions .logout {
-    padding: 5px 15px;
-    font-size: 15px;
-  }
-  nav .actions .logout i {
-    font-size: 18px;
-  }
-  nav .actions .menu-icon {
-    display: block;
-  }
-  aside {
-    height: calc(100vh - 55px);
-    position: fixed;
-    top: 55px;
-    left: -500px;
-  }
-  aside.active {
-    left: 0;
-  }
-}
-@media (max-width: 200px) {
-  nav .logo span {
-    display: none;
+  .user-wrapper .user-table {
+    width: 100%;
   }
 }/*# sourceMappingURL=admin.css.map */

@@ -96,8 +96,8 @@
       "id": 1,
       "image": "./assets/images/pr-1.jpg",
       "name": " scinnez Bird",
-      "price": 792
-      
+      "price": 792,
+      "inBasket": 1
     },
     {
       "id": 2,

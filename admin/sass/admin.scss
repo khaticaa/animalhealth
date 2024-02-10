@@ -1,4 +1,122 @@
+// @import "../../assets/sass/reset/reset";
+// @import "../../assets/sass/variables/variable";
+// @import "../../assets/sass/mixins/mixin";
+// @import "users.scss";
 
+  
+
+
+
+
+// body {
+//     // background: $primary-color;
+//   }
+  
+  //? ---------------> Users Start <---------------
+  
+  .user-wrapper {
+    // background: $primary-color;
+    background-color: #444444;
+    width: 100%;
+    height: calc(100vh - 66px);
+    padding: 20px;
+    // @include flex(flex-end, flex-start);
+    flex-direction: column;
+  
+    .user-table {
+      width: calc(100% - 250px);
+      background: #252525;
+      border-radius: 10px;
+      h1 {
+        
+        // background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px 5px 0 0;
+        padding: 5px 10px;
+      }
+      .table-body {
+        width: 100%;
+        height: calc(100vh - 156px);
+        overflow: auto;
+        border-radius: 5px;
+        padding: 5px;
+        &::-webkit-scrollbar {
+          height: 5px;
+        }
+      }
+      table {
+        width: 99%;
+        margin: 10px auto;
+        border-collapse: collapse;
+        background: #444444;
+        border-radius: 5px;
+        overflow: hidden;
+        tr {
+        //   color: $white;
+          &:nth-child(even) {
+            background: #505050;
+          }
+          th {
+            background: rgb(104, 104, 104);
+            text-align: left;
+            padding: 10px;
+          }
+  
+          td {
+            padding: 10px 20px;
+  
+            img {
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+              border-radius: 999px;
+            }
+            button {
+              font-size: 20px;
+            //   color: $white;
+              transition: all 0.5s ease;
+              border-radius: 5px;
+              padding: 10px 15px;
+              &:first-child {
+                // background: $yellow;
+              }
+              &:last-child {
+                background: red;
+              }
+              &:first-child:hover {
+                // color: $yellow;
+                // background: $white;
+              }
+              &:last-child:hover {
+                color: red;
+                // background: $white;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            &:hover {
+              background: rgba(255, 255, 255, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  //? ---------------> Users End <---------------
+  
+  @media (max-width: 768px) {
+    
+    .user-wrapper {
+      .user-table {
+        width: 100%;
+      }
+    }
+  }
+  
+  
+  
 
 //? ---------------> Navbar Start <---------------
 // nav {
@@ -246,232 +364,232 @@
 
 //? ---------------> Sidebar Start <---------------
 
-.overlay {
-  z-index: 9;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-//   background: rgba($color: #000000);
-background-color: black;
-transition: all 0.5s ease;
-  opacity: 0;
-  pointer-events: none;
+// .overlay {
+//   z-index: 9;
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+// //   background: rgba($color: #000000);
+// background-color: black;
+// transition: all 0.5s ease;
+//   opacity: 0;
+//   pointer-events: none;
 
-  &.active {
-    opacity: 1;
-    pointer-events: all;
-  }
-}
+//   &.active {
+//     opacity: 1;
+//     pointer-events: all;
+//   }
+// }
 
-aside {
-  z-index: 999;
-//   background: $primary-color;
-background-color: aquamarine;
-  width: 250px;
-  height: calc(100vh - 66px);
-  overflow-y: auto;
-  transition: all 0.5s ease;
-  position: fixed;
-  top: 66px;
+// aside {
+//   z-index: 999;
+// //   background: $primary-color;
+// background-color: aquamarine;
+//   width: 250px;
+//   height: calc(100vh - 66px);
+//   overflow-y: auto;
+//   transition: all 0.5s ease;
+//   position: fixed;
+//   top: 66px;
 
-  &::-webkit-scrollbar-thumb {
-    background: transparent;
-  }
+//   &::-webkit-scrollbar-thumb {
+//     background: transparent;
+//   }
 
-  &:hover::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-  }
+//   &:hover::-webkit-scrollbar-thumb {
+//     background: rgba(255, 255, 255, 0.3);
+//   }
 
-  .menu {
-    padding: 10px;
+//   .menu {
+//     padding: 10px;
 
-    li {
-      border-radius: 5px;
-      padding: 10px 20px;
-      transition: all 0.5s ease;
+//     li {
+//       border-radius: 5px;
+//       padding: 10px 20px;
+//       transition: all 0.5s ease;
 
-      &:hover {
-        background: rgba(255, 255, 255, 0.1);
-      }
+//       &:hover {
+//         background: rgba(255, 255, 255, 0.1);
+//       }
 
-      &:not(:last-child) {
-        margin-bottom: 5px;
-      }
+//       &:not(:last-child) {
+//         margin-bottom: 5px;
+//       }
 
-      &.active {
-        background: rgba(255, 255, 255, 0.2);
+//       &.active {
+//         background: rgba(255, 255, 255, 0.2);
 
-        span {
-          font-weight: 500;
-        }
-      }
+//         span {
+//           font-weight: 500;
+//         }
+//       }
 
-      a,
-      button {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-        background: transparent;
-        gap: 8px;
+//       a,
+//       button {
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//         background: transparent;
+//         gap: 8px;
 
-        span {
-          font-size: 17px;
-        //   color: $white;
-        }
+//         span {
+//           font-size: 17px;
+//         //   color: $white;
+//         }
 
-        i {
-        //   color: $white;
-          font-size: 20px;
-        }
-      }
-    }
-  }
-}
+//         i {
+//         //   color: $white;
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-//? ---------------> Sidebar End <---------------
+// //? ---------------> Sidebar End <---------------
 
-//? ---------------> Dashboard Start <---------------
-.dashboard-wrapper {
-  align-items: flex-start;
-  justify-content: flex-end;
-  display: flex;
+// //? ---------------> Dashboard Start <---------------
+// .dashboard-wrapper {
+//   align-items: flex-start;
+//   justify-content: flex-end;
+//   display: flex;
 
-  .dashboard {
-    width: calc(100% - 250px);
-    height: calc(100vh - 66px);
-    background: rgb(255, 255, 255);
-    padding: 20px;
+//   .dashboard {
+//     width: calc(100% - 250px);
+//     height: calc(100vh - 66px);
+//     background: rgb(255, 255, 255);
+//     padding: 20px;
 
-    .graphics {
-     display: flex;
-      gap: 10px;
-      .movies-graphics {
-        width: 50%;
-        padding: 20px;
-        background: #e3e3e3;
-        border-radius: 10px;
+//     .graphics {
+//      display: flex;
+//       gap: 10px;
+//       .movies-graphics {
+//         width: 50%;
+//         padding: 20px;
+//         background: #e3e3e3;
+//         border-radius: 10px;
 
-        .genre-box {
-          padding: 20px;
+//         .genre-box {
+//           padding: 20px;
 
-          .progress {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-            gap: 10px;
+//           .progress {
+//            display: flex;
+//            align-items: center;
+//            justify-content: center;
+//             gap: 10px;
 
-            span {
-              font-size: 18px;
-            }
+//             span {
+//               font-size: 18px;
+//             }
 
-            .progress-bar {
-              position: relative;
-              width: 100%;
-              height: 10px;
-              background: rgb(185, 185, 185);
-              border-radius: 50px;
+//             .progress-bar {
+//               position: relative;
+//               width: 100%;
+//               height: 10px;
+//               background: rgb(185, 185, 185);
+//               border-radius: 50px;
 
-              &::after {
-                position: absolute;
-                content: '';
-                width: 60%;
-                height: 100%;
-                background: rebeccapurple;
-                border-radius: 50px;
-              }
-            }
-          }
-        }
-      }
+//               &::after {
+//                 position: absolute;
+//                 content: '';
+//                 width: 60%;
+//                 height: 100%;
+//                 background: rebeccapurple;
+//                 border-radius: 50px;
+//               }
+//             }
+//           }
+//         }
+//       }
 
-      .circle-wrapper {
+//       .circle-wrapper {
 
-        background: #e3e3e3;
-        border-radius: 10px;
-        width: 50%;
-        padding: 20px;
+//         background: #e3e3e3;
+//         border-radius: 10px;
+//         width: 50%;
+//         padding: 20px;
 
-        .circle {
-          margin: auto;
-          width: 305px;
-          height: 305px;
-          border-radius: 999px;
-          background-image: conic-gradient(blue 0%, blue 70%, rgb(185, 185, 185) 70%, rgb(185, 185, 185) 100%);
-   display: flex;
-   align-items: center;
-   justify-content: center;
+//         .circle {
+//           margin: auto;
+//           width: 305px;
+//           height: 305px;
+//           border-radius: 999px;
+//           background-image: conic-gradient(blue 0%, blue 70%, rgb(185, 185, 185) 70%, rgb(185, 185, 185) 100%);
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
 
-          span {
-            font-size: 80px;
-            background: #e3e3e3;
-            width: 250px;
-            height: 250px;
-            border-radius: 999px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-            color: blue;
-            font-weight: 600;
-          }
-        }
-      }
-    }
-  }
-}
+//           span {
+//             font-size: 80px;
+//             background: #e3e3e3;
+//             width: 250px;
+//             height: 250px;
+//             border-radius: 999px;
+//      display: flex;
+//      align-items: center;
+//      justify-content: center;
+//             color: blue;
+//             font-weight: 600;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-//? ---------------> Dashboard End <---------------
+// //? ---------------> Dashboard End <---------------
 
-@media (max-width: 768px) {
-  nav {
-    padding: 10px 15px;
+// @media (max-width: 768px) {
+//   nav {
+//     padding: 10px 15px;
 
-    .logo {
-      img {
-        width: 30px;
-        height: 30px;
-      }
+//     .logo {
+//       img {
+//         width: 30px;
+//         height: 30px;
+//       }
 
-      span {
-        font-size: 20px;
-      }
-    }
+//       span {
+//         font-size: 20px;
+//       }
+//     }
 
-    .actions {
-      .logout {
-        padding: 5px 15px;
-        font-size: 15px;
+//     .actions {
+//       .logout {
+//         padding: 5px 15px;
+//         font-size: 15px;
 
-        i {
-          font-size: 18px;
-        }
-      }
+//         i {
+//           font-size: 18px;
+//         }
+//       }
 
-      .menu-icon {
-        display: block;
-      }
-    }
-  }
+//       .menu-icon {
+//         display: block;
+//       }
+//     }
+//   }
 
-  aside {
-    height: calc(100vh - 55px);
-    position: fixed;
-    top: 55px;
-    left: -500px;
+//   aside {
+//     height: calc(100vh - 55px);
+//     position: fixed;
+//     top: 55px;
+//     left: -500px;
 
-    &.active {
-      left: 0;
-    }
-  }
-}
+//     &.active {
+//       left: 0;
+//     }
+//   }
+// }
 
 
 
-@media (max-width: 200px) {
-  nav {
-    .logo {
-      span {
-        display: none;
-      }
-    }
-  }
-}
+// @media (max-width: 200px) {
+//   nav {
+//     .logo {
+//       span {
+//         display: none;
+//       }
+//     }
+//   }
+// }
