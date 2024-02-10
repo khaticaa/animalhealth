@@ -282,6 +282,10 @@
   transform: scale(1.1);
 }
 
+.basketdivi {
+  padding-right: 30px;
+}
+
 @media (max-width: 992px) {
   .leftcategories {
     display: none;
@@ -314,6 +318,9 @@
   }
   .cards .card {
     width: calc(70% - 20px);
+  }
+  .basketdivi {
+    display: none;
   }
 }
 @media (max-width: 576px) {

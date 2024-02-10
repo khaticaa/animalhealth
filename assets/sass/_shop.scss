@@ -368,6 +368,7 @@ img{
 
 .card .hoverolayi .add-to-favorites {
   background-color: #dc3545;
+  // z-index: 100;
 }
 
 .card .hoverolayi .add-to-cart:hover,
@@ -376,7 +377,9 @@ img{
 }
 
 
-
+.basketdivi{
+  padding-right: 30px;
+}
 
 
 
@@ -566,7 +569,9 @@ img{
         width: calc(70% - 20px);
       }
     }
-  
+  .basketdivi{
+    display: none;
+  }
    
   }
   
