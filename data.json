@@ -97,16 +97,16 @@
       "image": "./assets/images/pr-1.jpg",
       "name": " scinnez Bird",
       "price": 792,
-      "inBasket": 1,
-      "isFavorite": false
-    },
+      "isFavorite": false,
+      "inBasket": 1
+      },
     {
       "id": 2,
       "image": "./assets/images/pr-6.jpg",
       "name": "Cat scinnez ",
       "price": 179,
-      "inBasket": 1,
-      "isFavorite": false
+      "isFavorite": false,
+      "inBasket": 1
     },
     {
       "id": 3,

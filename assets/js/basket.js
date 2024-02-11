@@ -5,16 +5,30 @@ let emptyAlert = document.querySelector('.empty')
 let sorted = "asc";
 let filteredArr = [];
 
-let addCount = async (id, count) => {
-  await axios.patch("http://localhost:3000/shop/"+id, {inBasket : count + 1})
-  window.location.reload()
-}
+let sum = 0;
 
-let removeCount = async (id,count) => {
-  if( count  == 1 ){
+// const plus = ( id, inBasket) => {
+//   inBasket++
+//   axios.patch(shop+ id, { inBasket:  inBasket}).then(res=>window.location.reload())
+// }
+
+
+// const minus = ( id, inBasket) => {
+//   inBasket> 1 ?  inBasket -- :  inBasket = 1
+//   axios.patch(shop+ id, {inBasket: inBasket}).then(res=>window.location.reload())
+// }
+
+
+let addCount = async (id, inBasket) => {
+  await axios.patch("http://localhost:3000/shop/"+id, {inBasket : inBasket + 1})
+  window.location.reload()
+} 
+
+let removeCount = async (id,inBasket) => {
+  if( inBasket  == 1 ){
     await axios.patch("http://localhost:3000/shop/"+id, {inBasket : null})
   }else{
-    await axios.patch("http://localhost:3000/shop/"+id, {inBasket : count - 1})
+    await axios.patch("http://localhost:3000/shop/"+id, {inBasket : inBasket - 1})
     window.location.reload();
   }
 
@@ -30,28 +44,39 @@ async function getAllCards() {
       emptyAlert.style.display = 'none'
       cards.innerHTML += `
       <div class="card">
+      <div class ="deleteBasket " onclick =" deleteBasket(${el.id}) "   >delete</div>
             <div class="img">
-                <img src="${el.photo}" alt="">
+                <img src="${el.image}" alt="">
             </div>
             <div class="cardtext">
                 <h3>${el.name}</h3>
-                <p>${el.price * el.inBasket}</p>
+                <p>$${el.price * el.inBasket}</p>
+
+                <div class ="right">
+                <button onclick ="minus(${el.id} ,${el.inBasket})"> <i class ="bx bx-minus">minus</i> </button>
+                <span></span>
+                <button onclick ="plus(${el.id} ,${el.inBasket})"> <i class ="bx bx-plus">plus</i> </button>
+                </div>
+                
             <div class="hoverolayi">
-                <div class="add-to-cart">
-                    <i class="bi bi-basket2"></i>
-                    
-                 </div>
-                 <div class="add-to-favorites">
-                    <i class="bi bi-heart"></i>
-                 </div>
+                
+                
             </div>
             </div>
         </div>
         `;
+        return sum = sum + el.price
     }
   });
+  total.innerHTML = `Total:$${sum}`
 }
 getAllCards();
+
+const deleteBasket = ( id) => {
+  
+  axios.delete(shop+ id).then(res=>window.location.reload())
+}
+
 
 
 

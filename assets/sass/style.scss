@@ -28,7 +28,8 @@ nav {
 //   background-color: blanchedalmond;
   padding: 20px 0px;
   width: 100%;
-
+// z-index: 9999999999999999999999;
+// position: absolute;
   #click {
     display: none;
     font-size: 20px;
@@ -1562,3 +1563,410 @@ padding: 20px;
     }
   }
 }
+
+
+// ----------------->admin-------------
+
+
+  
+.user-wrapper {
+  // background: $primary-color;
+  background-color: #444444;
+  width: 100%;
+  // height: calc(100vh - 66px);
+
+  // padding: 20px;
+  // @include flex(flex-end, flex-start);
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+
+
+  .user-table {
+    width: calc(100% - 250px);
+    background: #252525;
+    border-radius: 10px;
+    h1 {
+      
+      // background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px 5px 0 0;
+      padding: 5px 10px;
+    }
+    .table-body {
+      width: 100%;
+      height: calc(100vh - 156px);
+      overflow: auto;
+      border-radius: 5px;
+      padding: 5px;
+      &::-webkit-scrollbar {
+        height: 5px;
+      }
+    }
+    table {
+      width: 99%;
+      margin: 10px auto;
+      border-collapse: collapse;
+      background: #444444;
+      border-radius: 5px;
+      overflow: hidden;
+      tr {
+      //   color: $white;
+        &:nth-child(even) {
+          background: #505050;
+        }
+        th {
+          background: rgb(104, 104, 104);
+          text-align: left;
+          padding: 10px;
+        }
+
+        td {
+          padding: 10px 20px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 999px;
+          }
+          button {
+            font-size: 20px;
+          //   color: $white;
+            transition: all 0.5s ease;
+            border-radius: 5px;
+            padding: 10px 15px;
+            &:first-child {
+              // background: $yellow;
+            }
+            &:last-child {
+              background: red;
+            }
+            &:first-child:hover {
+              // color: $yellow;
+              // background: $white;
+            }
+            &:last-child:hover {
+              color: red;
+              // background: $white;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+//? ---------------> Users End <---------------
+
+@media (max-width: 768px) {
+  
+  .user-wrapper {
+    .user-table {
+      width: 100%;
+    }
+  }
+}
+
+
+
+// aside {
+//   width: 250px;
+//   background-color: #333;
+//   color: #fff;
+//   position: fixed;
+//   top: 0;
+//   left: -250px;
+//   bottom: 0;
+//   padding-top: 60px;
+//   transition: left 0.3s ease;
+// }
+
+// .menu {
+//   list-style: none;
+// }
+
+// .menu li {
+//   margin-bottom: 10px;
+// }
+
+// .menu li.active a {
+//   color: #fff;
+// }
+
+// .menu li a {
+//   color: #ccc;
+//   text-decoration: none;
+//   display: block;
+//   padding: 10px;
+// }
+
+// .menu li a:hover {
+//   color: #fff;
+//   background-color: #555;
+// }
+
+// .overlay {
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   z-index: 999;
+// }
+
+// .user-wrapper {
+//   background-color: #444444;
+//   width: 100%;
+//   min-height: 100vh;
+//   padding: 20px;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .user-table {
+//   width: calc(100% - 250px);
+//   background-color: #252525;
+//   border-radius: 10px;
+//   padding: 20px;
+// }
+
+// .user-table h1 {
+//   color: #fff;
+//   padding: 10px 0;
+// }
+
+// .table-body {
+//   max-height: calc(100vh - 300px);
+//   overflow-y: auto;
+// }
+
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+// }
+
+// table th,
+// table td {
+//   padding: 10px;
+//   color: #fff;
+// }
+
+// table th {
+//   background-color: #686868;
+// }
+
+// table tbody tr:nth-child(even) {
+//   background-color: #505050;
+// }
+
+// table tbody tr:hover {
+//   background-color: rgba(255, 255, 255, 0.1);
+// }
+
+// .edit-btn,
+// .delete-btn {
+//   background-color: transparent;
+//   border: none;
+//   color: #fff;
+//   font-size: 20px;
+//   cursor: pointer;
+//   transition: color 0.3s ease;
+// }
+
+// .edit-btn:hover,
+// .delete-btn:hover {
+//   color: #ccc;
+// }
+
+// @media (max-width: 768px) {
+//   nav .actions .menu-icon {
+//     display: block;
+//     cursor: pointer;
+//   }
+
+//   .menu {
+//     position: fixed;
+//     top: 60px;
+//     left: -250px;
+//     width: 250px;
+//     height: 100vh;
+//     background-color: #333;
+//     padding-top: 20px;
+//     transition: left 0.3s ease;
+//   }
+
+//   .menu.open {
+//     left: 0;
+//   }
+
+//   .overlay {
+//     display: block;
+//   }
+// }
+
+
+
+.overlay {
+
+    // z-index: 9;
+    position: fixed;
+  
+    width: 100%;
+    height: 100%;
+  //   background: rgba($color: #000000);
+  background-color: black;
+  transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+  
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  
+  aside {
+
+    // margin-top: 30px;
+// top: 0;
+    // z-index: -1;
+    // top:-10px;
+  //   background: $primary-color;
+  // background-color: rgb(120, 181, 161);  
+  background-color: rgb(76, 106, 96);  
+  // background-color:black;
+    width: 250px;
+    height: calc(100vh - 66px);
+    // overflow-y: auto;
+    transition: all 0.5s ease;
+    position: fixed;
+    overflow: hidden;
+    
+    // top: 66px;
+  
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+  
+    &:hover::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  
+    .menu {
+      padding: 10px;
+  
+      li {
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: all 0.5s ease;
+  
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+  
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+  
+        &.active {
+          background: rgba(255, 255, 255, 0.2);
+  
+          span {
+            font-weight: 500;
+          }
+        }
+  a{
+    text-decoration: none;
+    // color: #252525;
+    // color: #f78263;
+    // color: #f1714d;
+    font-weight: bold;
+  }
+        a,
+        button {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          background: transparent;
+          gap: 8px;
+  
+          span {
+            font-size: 17px;
+          //   color: $white;
+          }
+  
+          i {
+          //   color: $white;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  
+
+  .dasboard{
+    // background-color: #444444;
+    min-height: 85.3vh; 
+.img{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+justify-content: center;
+padding-top: 40px;  img{
+   
+  }
+}
+    
+  //  min-height: 100vh;
+    // display: flex;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+  }
+
+
+  .addhissesi{
+    padding-top: 22px;
+display: flex;
+align-items: flex-start;
+justify-content: flex-end;
+padding-right: 30px;
+button{
+  padding: 5px 10px;
+  // border: #222222
+  ;
+  background-color: #343434;
+  color: white;
+}
+  }
+
+
+
+
+  // footerdeyisikliyi
+
+  .d-flex{
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .text-body{
+    text-decoration: none;
+  }
+  
+  .text-white{
+    text-decoration: none;
+  }
