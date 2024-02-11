@@ -94,15 +94,15 @@
   "shop": [
     {
       "id": 1,
-      "image": "./assets/images/pr-1.jpg",
-      "name": " scinnez Bird",
+      "image": "../assets/images/pr-1.jpg",
+      "name": " Scinnez Bird",
       "price": 792,
-      "isFavorite": false,
+      "isFavorite": true,
       "inBasket": 1
-      },
+    },
     {
       "id": 2,
-      "image": "./assets/images/pr-6.jpg",
+      "image": "../assets/images/pr-6.jpg",
       "name": "Cat scinnez ",
       "price": 179,
       "isFavorite": false,
@@ -110,33 +110,39 @@
     },
     {
       "id": 3,
-      "image": "./assets/images/pr-3.jpg",
+      "image": "../assets/images/pr-3.jpg",
       "name": "Cat scinnez Bird",
-      "price": 479
+      "price": 479,
+      "isFavorite": true,
+      "inBasket": 1
     },
     {
       "id": 4,
-      "image": "./assets/images/pr-4.jpg",
-      "name": "home",
-      "price": 79
+      "image": "../assets/images/pr-4.jpg",
+      "name": "Home",
+      "price": 79,
+      "isFavorite": false
     },
     {
       "id": 5,
-      "image": "./assets/images/pr-1.jpg",
-      "name": " innez Bird",
-      "price": 2279
+      "image": "../assets/images/pr-1.jpg",
+      "name": " Innez Bird",
+      "price": 2279,
+      "isFavorite": false
     },
     {
       "id": 6,
-      "image": "./assets/images/pr-1.jpg",
+      "image": "../assets/images/pr-1.jpg",
       "name": "Cat scinnez Bird",
-      "price": 379
+      "price": 379,
+      "isFavorite": false
     },
     {
       "id": 7,
-      "image": "./assets/images/pr-1.jpg",
+      "image": "../assets/images/pr-1.jpg",
       "name": "Cat scinnez Bird",
-      "price": 779
+      "price": 779,
+      "isFavorite": false
     }
   ]
 }

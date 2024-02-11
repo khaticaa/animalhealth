@@ -53,9 +53,9 @@
           </a>
         </li>
         <li class="active">
-          <a href="./users.html">
+          <a href="./blog.html">
             <i class="bx bxs-user"></i>
-            <span>Users</span>
+            <span>Blog</span>
           </a>
         </li>
         <li>
@@ -80,24 +80,27 @@
       <div class="user-table">
         <!-- <h1>All Users</h1> -->
         <div   class="addhissesi">
-          <button>+</button>
+          <button id="add">+</button>
         </div>
+       
         
+      
         <div class="table-body">
-          <table>
+          <table id="myTable">
             <thead>
               <tr>
-                <th>Id</th>
-                <th>Image</th>
-                <th>Fullname</th>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Date</th>
-                <th>-</th>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>Favorite</th>
+                <th>Delete</th>
+                <th>Update</th>
               </tr>
+              
             </thead>
+            
             <tbody>
-              <tr>
+              <!-- <tr>
                 <td>1</td>
                 <td><img src="../assets/images/20-1-1.jpg" alt="image"></td>
                 <td>Xedice Mirzoeva</td>
@@ -216,7 +219,7 @@
                   <button class="edit-btn" title="edit"><i class="bi bi-pencil-square"></i></button>
                   <button class="delete-btn" title="delete"><i class="bi bi-trash3"></i></button>
                 </td>
-              </tr>
+              </tr> -->
               
             </tbody>
           </table>
@@ -224,6 +227,7 @@
       </div>
     </div>
     <!--?--------------- Users End ----------------->
-    <script src="./js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/blog.js"></script>
   </body>
 </html>
