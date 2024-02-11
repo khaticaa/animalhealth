@@ -348,12 +348,13 @@ img{
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none;
+  pointer-events: none; 
 }
 
 .card:hover .hoverolayi {
   opacity: 1;
-  // pointer-events: none;
+ 
+
 }
 
 .card .hoverolayi .add-to-cart,
@@ -366,16 +367,20 @@ img{
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  
+  pointer-events: all;
 }
 
 .card .hoverolayi .add-to-favorites {
   background-color: #dc3545;
   // z-index: 100;
+  // pointer-events: none;
 }
 
 .card .hoverolayi .add-to-cart:hover,
 .card .hoverolayi .add-to-favorites:hover {
   transform: scale(1.1);
+
 }
 
 

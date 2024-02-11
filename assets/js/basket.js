@@ -53,7 +53,7 @@ async function getAllCards() {
                 <p>$${el.price * el.inBasket}</p>
 
                 <div class ="right">
-                <button onclick ="minus(${el.id} ,${el.inBasket})"> <i class ="bx bx-minus">minus</i> </button>
+                <button  onclick ="minus(${el.id} ,${el.inBasket})"> <i  class ="bx bx-minus">minus</i> </button>
                 <span>${el.inBasket}</span>
                 <button onclick ="plus(${el.id} ,${el.inBasket})"> <i class ="bx bx-plus">plus</i> </button>
                 </div>
@@ -78,6 +78,10 @@ getAllCards();
   
 //   axios.delete(shop+ id).then(res=>window.location.reload())
 // }
+
+
+
+
 
 
 
