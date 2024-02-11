@@ -1,4 +1,4 @@
-
+let shop = `http://localhost:3000/shop/`
 let cards = document.querySelector(".cards");
 let sortBtn = document.querySelector(".sort");
 let emptyAlert = document.querySelector('.empty')
@@ -7,16 +7,16 @@ let filteredArr = [];
 
 let sum = 0;
 
-// const plus = ( id, inBasket) => {
-//   inBasket++
-//   axios.patch(shop+ id, { inBasket:  inBasket}).then(res=>window.location.reload())
-// }
+const plus = ( id, inBasket) => {
+  inBasket++
+  axios.patch(shop+ id, { inBasket:  inBasket}).then(res=>window.location.reload())
+}
 
 
-// const minus = ( id, inBasket) => {
-//   inBasket> 1 ?  inBasket -- :  inBasket = 1
-//   axios.patch(shop+ id, {inBasket: inBasket}).then(res=>window.location.reload())
-// }
+const minus = ( id, inBasket) => {
+  inBasket> 1 ?  inBasket -- :  inBasket = 1
+  axios.patch(shop+ id, {inBasket: inBasket}).then(res=>window.location.reload())
+}
 
 
 let addCount = async (id, inBasket) => {
@@ -44,7 +44,7 @@ async function getAllCards() {
       emptyAlert.style.display = 'none'
       cards.innerHTML += `
       <div class="card">
-      <div class ="deleteBasket " onclick =" deleteBasket(${el.id}) "   >delete</div>
+    
             <div class="img">
                 <img src="${el.image}" alt="">
             </div>
@@ -54,7 +54,7 @@ async function getAllCards() {
 
                 <div class ="right">
                 <button onclick ="minus(${el.id} ,${el.inBasket})"> <i class ="bx bx-minus">minus</i> </button>
-                <span></span>
+                <span>${el.inBasket}</span>
                 <button onclick ="plus(${el.id} ,${el.inBasket})"> <i class ="bx bx-plus">plus</i> </button>
                 </div>
                 
@@ -65,17 +65,22 @@ async function getAllCards() {
             </div>
         </div>
         `;
-        return sum = sum + el.price
+        return sum = sum + (el.price *  el.inBasket)
     }
   });
   total.innerHTML = `Total:$${sum}`
 }
 getAllCards();
 
-const deleteBasket = ( id) => {
+
+
+// const deleteBasket = ( id) => {
   
-  axios.delete(shop+ id).then(res=>window.location.reload())
-}
+//   axios.delete(shop+ id).then(res=>window.location.reload())
+// }
+
+
+
 
 
 

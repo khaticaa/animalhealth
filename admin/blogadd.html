@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="add">
+        <form >
+<label for="file">Image:</label>
+<input type="file" id="file">
+<div class="rounded-image">
+    <img src="" id="rounded-image" alt="">
+</div>
+
+
+<label for="name">Name:</label>
+<input type="text" id="name">
+<p style="display: none; color:red ">Xanalari doldur!! </p>
+
+
+
+
+<label for="prize">Prize:</label>
+<input type="number" id="prize">
+<p style="display: none; color:red ">Xanalari doldur!! </p>
+
+
+<button id="add">add</button>
+
+        </form>
+    </section>
+
+    <table border="1">
+        <tr>
+         <td>ID:</td>
+         <td>Name:</td>
+         <td>PRICE:</td>
+         <td>DELETE:</td>
+        </tr>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/blogadd.js"></script>
+</body>
+</html>
