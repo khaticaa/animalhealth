@@ -1,4 +1,5 @@
 {
+
   "viewdoctor": [
     {
       "id": 1,
@@ -97,15 +98,15 @@
       "image": "../assets/images/pr-1.jpg",
       "name": " Scinnez Bird",
       "price": 792,
-      "isFavorite": true,
-      "inBasket": 2
+      "isFavorite": false,
+      "inBasket": 1
     },
     {
       "id": 2,
       "image": "../assets/images/pr-6.jpg",
       "name": "Cat scinnez ",
       "price": 179,
-      "isFavorite": true,
+      "isFavorite": false,
       "inBasket": 1
     },
     {
@@ -113,7 +114,7 @@
       "image": "../assets/images/pr-3.jpg",
       "name": "Cat scinnez Bird",
       "price": 479,
-      "isFavorite": true,
+      "isFavorite": false,
       "inBasket": 1
     },
     {

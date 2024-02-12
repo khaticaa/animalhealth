@@ -409,6 +409,11 @@
   width: 100%;
 }
 
+::selection {
+  background-color: #f1714d;
+  color: white;
+}
+
 nav {
   padding: 20px 0px;
   width: 100%;
@@ -436,9 +441,6 @@ nav .nav-o .nright ul {
   justify-content: center;
   gap: 30px;
   list-style: none;
-}
-nav .nav-o .nright ul li span {
-  color: gray;
 }
 nav .nav-o .nright ul li a {
   text-decoration: none;
