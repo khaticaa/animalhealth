@@ -391,6 +391,10 @@
   background-image: url("../images/doggy-2000x1199.jpg");
   background-repeat: no-repeat;
 }
+.logout {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;

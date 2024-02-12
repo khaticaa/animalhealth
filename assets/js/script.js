@@ -114,7 +114,16 @@ window.addEventListener("resize", () => {
 
 
 
+let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).name : null;
+let login  =document.querySelector('.login');
+let logout  =document.querySelector('.logout');
+if(user){
+  login.textContent = `${user}`;
+  logout.style.display = 'block'
+}
 
-
-
-
+logout.addEventListener("click" , ()=>{
+    localStorage.removeItem('currentUser');
+    
+  logout.style.display = 'none'
+})
