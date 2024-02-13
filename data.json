@@ -1,5 +1,4 @@
 {
-
   "viewdoctor": [
     {
       "id": 1,
@@ -98,36 +97,24 @@
       "image": "../assets/images/pr-1.jpg",
       "name": " Scinnez Bird",
       "price": 792,
-<<<<<<< HEAD
-      "isFavorite": false
-=======
-      "isFavorite": false,
-      "inBasket": 1
->>>>>>> 08deb6291f44c438bd645a33fc665a29d5e80b5f
+      "isFavorite": true,
+      "inBasket": 3
     },
     {
       "id": 2,
       "image": "../assets/images/pr-6.jpg",
       "name": "Cat scinnez ",
       "price": 179,
-<<<<<<< HEAD
-      "isFavorite": false
-=======
       "isFavorite": false,
       "inBasket": 1
->>>>>>> 08deb6291f44c438bd645a33fc665a29d5e80b5f
     },
     {
       "id": 3,
       "image": "../assets/images/pr-3.jpg",
       "name": "Cat scinnez Bird",
       "price": 479,
-<<<<<<< HEAD
-      "isFavorite": false
-=======
-      "isFavorite": false,
+      "isFavorite": true,
       "inBasket": 1
->>>>>>> 08deb6291f44c438bd645a33fc665a29d5e80b5f
     },
     {
       "id": 4,
@@ -206,6 +193,15 @@
       "subject": "proje",
       "message": "heyyyyyy",
       "id": 5
+    },
+    {
+      "name": "khaticaa",
+      "email": "mirzoevaxedice0@gmail.com",
+      "phone": "+994509842302",
+      "project": "aaaa",
+      "subject": "wwwwwwaaaaawwww",
+      "message": "wwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "id": 6
     }
   ],
   "acount": [
@@ -232,15 +228,57 @@
       "fav": [],
       "Id": [],
       "id": 4
-    }
-  ],
-  "acount": [
+    },
     {
-      "name": "cavidan",
-      "mail": "ddd@gmail.com",
+      "name": "khaticaa",
+      "mail": "xedice@gmail.com",
       "password": "123",
       "fav": [],
       "Id": [],
+      "id": 5
+    }
+  ],
+  "siparisler": [
+    {
+      "orders": [
+        {
+          "id": 1,
+          "name": " Scinnez Bird",
+          "price": 792,
+          "quantity": 3
+        },
+        {
+          "id": 2,
+          "name": "Cat scinnez ",
+          "price": 179,
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "Cat scinnez Bird",
+          "price": 479,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Home",
+          "price": 79,
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "name": " Innez Bird",
+          "price": 2279,
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "name": "Cat scinnez Bird",
+          "price": 779,
+          "quantity": 1
+        }
+      ],
+      "total": 6171,
       "id": 1
     }
   ]

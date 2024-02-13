@@ -126,11 +126,9 @@ logout.addEventListener("click" , ()=>{
     localStorage.removeItem('currentUser');
     
   logout.style.display = 'none'
-<<<<<<< HEAD
+
 })
 
 
 
-=======
-})
->>>>>>> 08deb6291f44c438bd645a33fc665a29d5e80b5f
+
