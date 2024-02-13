@@ -7,7 +7,9 @@
 // @import 'pages.scss';
 @import 'contact.scss';
 
-
+.logout{
+  display: none;
+}
 
 * {
   margin: 0;
@@ -22,7 +24,10 @@
   width: 100%;
 }
 
-
+::selection{
+  background-color: #f1714d;
+  color: white;
+}
 
 nav {
 //   background-color: blanchedalmond;
@@ -56,9 +61,6 @@ nav {
         gap: 30px;
         list-style: none;
         li {
-          span {
-            color: gray;
-          }
           a {
             text-decoration: none;
             color: black;

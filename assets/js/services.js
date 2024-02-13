@@ -23,5 +23,3 @@ window.addEventListener("resize", () => {
         menu.classList.add("bi-list");
     }
 });
-
-

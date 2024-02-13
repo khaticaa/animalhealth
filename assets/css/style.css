@@ -391,6 +391,10 @@
   background-image: url("../images/doggy-2000x1199.jpg");
   background-repeat: no-repeat;
 }
+.logout {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -403,6 +407,11 @@
   padding: 0px 32px;
   max-width: 1400px;
   width: 100%;
+}
+
+::selection {
+  background-color: #f1714d;
+  color: white;
 }
 
 nav {
@@ -432,9 +441,6 @@ nav .nav-o .nright ul {
   justify-content: center;
   gap: 30px;
   list-style: none;
-}
-nav .nav-o .nright ul li span {
-  color: gray;
 }
 nav .nav-o .nright ul li a {
   text-decoration: none;

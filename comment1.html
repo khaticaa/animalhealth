@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .comment-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        .comment-form input {
+            width: calc(100% - 22px); /* İnput genişliğini ayarla */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block; /* Inputları yan yana göster */
+        }
+
+        .comment-form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comments {
+            margin-top: 30px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .comment .author {
+            font-weight: bold;
+            color: #333;
+            display: block; /* Yazar adını blok element yap */
+            margin-bottom: 5px; /* Yazar adı ile hekim adı arasına boşluk ekle */
+        }
+
+        .comment .hekim {
+            color: #666;
+        }
+
+        .comment .date {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comment Page</h1>
+        <div class="comment-form">
+            <form id="comment-form">
+                <input type="text" id="hekimadi" placeholder="Hekimin adını yazın">
+                <textarea id="comment-input" rows="4" placeholder="Yorumunuzu yazın..."></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+        <div class="comments" id="comments-container">
+            <!-- Yorumlar buraya dinamik olarak eklenecek -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentsContainer = document.getElementById('comments-container');
+            const hekimadiInput = document.getElementById('hekimadi'); // Hekimin adını aldığımız input
+
+            // Yorumları yerel depolamadan yükle
+            loadComments();
+
+            // Yorumları eklerken
+            commentForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Sayfanın yenilenmesini engelle
+                const commentContent = commentInput.value.trim();
+                const hekimadi = hekimadiInput.value.trim(); // Hekimin adını al
+                if (commentContent !== '') {
+                    const currentDate = new Date().toLocaleDateString();
+                    const currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).name : "Bilinmeyen Kullanıcı";
+                    const newComment = {
+                        author: currentUser,
+                        hekimadi: hekimadi, // Hekimin adını yorum objesine ekle
+                        content: commentContent,
+                        date: currentDate
+                    };
+
+                    addComment(newComment); // Yeni yorumu ekle
+                    commentInput.value = ''; // Yorum inputunu temizle
+                    hekimadiInput.value = ''; // Hekimin adı inputunu temizle
+
+                    // Yorumları yerel depolamaya kaydet
+                    saveComment(newComment);
+                } else {
+                    alert('Lütfen bir yorum yazın.');
+                }
+            });
+        });
+
+        function saveComment(comment) {
+            let comments = [];
+            if (localStorage.getItem('comments')) {
+                comments = JSON.parse(localStorage.getItem('comments'));
+            }
+            comments.unshift(comment); // Yeni yorumları başa eklemek için 'unshift' kullanın
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+
+        function loadComments() {
+            const commentsContainer = document.getElementById('comments-container');
+            if (localStorage.getItem('comments')) {
+                const comments = JSON.parse(localStorage.getItem('comments'));
+                comments.forEach(comment => {
+                    const newComment = `
+                        <div class="comment">
+                            <span class="author">${comment.author}</span>
+                            <span class="hekim">${comment.hekimadi}</span> <!-- Hekimin adını göster -->
+                            <p>${comment.content}</p>
+                            <span class="date">${comment.date}</span>
+                        </div>
+                    `;
+                    commentsContainer.insertAdjacentHTML('beforeend', newComment);
+                });
+            }
+        }
+
+        function addComment(comment) {
+            const commentsContainer = document.getElementById('comments-container');
+            const newComment = `
+                <div class="comment">
+                    <span class="author">${comment.author}</span>
+                    <span class="hekim">${comment.hekimadi}</span> <!-- Hekimin adını göster -->
+                    <p>${comment.content}</p>
+                    <span class="date">${comment.date}</span>
+                </div>
+            `;
+            commentsContainer.insertAdjacentHTML('afterbegin', newComment); // Yeni yorumları en üstte göstermek için 'afterbegin' kullanın
+        }
+    </script>
+</body>
+</html>

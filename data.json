@@ -97,24 +97,21 @@
       "image": "../assets/images/pr-1.jpg",
       "name": " Scinnez Bird",
       "price": 792,
-      "isFavorite": true,
-      "inBasket": 1
+      "isFavorite": false
     },
     {
       "id": 2,
       "image": "../assets/images/pr-6.jpg",
       "name": "Cat scinnez ",
       "price": 179,
-      "isFavorite": false,
-      "inBasket": 5
+      "isFavorite": false
     },
     {
       "id": 3,
       "image": "../assets/images/pr-3.jpg",
       "name": "Cat scinnez Bird",
       "price": 479,
-      "isFavorite": true,
-      "inBasket": 1
+      "isFavorite": false
     },
     {
       "id": 4,
@@ -122,14 +119,15 @@
       "name": "Home",
       "price": 79,
       "isFavorite": false,
-      "inBasket": 3
+      "inBasket": 1
     },
     {
       "id": 5,
       "image": "../assets/images/pr-1.jpg",
       "name": " Innez Bird",
       "price": 2279,
-      "isFavorite": false
+      "isFavorite": false,
+      "inBasket": 1
     },
     {
       "id": 6,
@@ -156,6 +154,68 @@
       "subject": "aaaaaaaa",
       "message": "aaaaaaaaa",
       "id": 1
+    },
+    {
+      "name": "Xedice",
+      "email": "mirzoevaxedice0@gmail.com",
+      "phone": "+994509842302",
+      "project": "aaaa",
+      "subject": "memnunluq",
+      "message": "hekimleriniz cox eladir",
+      "id": 2
+    },
+    {
+      "name": "Xedice",
+      "email": "mirzoevaxedice2@gmail.com",
+      "phone": "+994509842302",
+      "project": "aaaa",
+      "subject": "aaaaaaaa",
+      "message": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": 3
+    },
+    {
+      "name": "s",
+      "email": "ssssssss@gmail.com",
+      "phone": "s",
+      "project": "s",
+      "subject": "s",
+      "message": "ss",
+      "id": 4
+    },
+    {
+      "name": "khaticaa",
+      "email": "mirzoevaxedice2@gmail.com",
+      "phone": "+994509842302",
+      "project": "s",
+      "subject": "proje",
+      "message": "heyyyyyy",
+      "id": 5
+    }
+  ],
+  "acount": [
+    {
+      "name": "xedice",
+      "mail": "xedice@gmail.com",
+      "password": "123",
+      "fav": [],
+      "Id": [],
+      "id": 2
+    },
+    {
+      "name": "xedice",
+      "mail": "xedice@gmail.com",
+      "password": "123",
+      "fav": [],
+      "Id": [],
+      "id": 3
+    },
+    {
+      "name": "sara",
+      "mail": "xedice@gmail.com",
+      "password": "123",
+      "fav": [],
+      "Id": [],
+      "id": 4
     }
   ]
 }
