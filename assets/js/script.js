@@ -114,11 +114,12 @@ window.addEventListener("resize", () => {
 
 
 
-let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).name : null;
+let user = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : null;
+console.log(user.id);
 let login  =document.querySelector('.login');
 let logout  =document.querySelector('.logout');
 if(user){
-  login.textContent = `${user}`;
+  login.textContent = `${user.name}`;
   logout.style.display = 'block'
 }
 

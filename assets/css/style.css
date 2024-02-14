@@ -639,7 +639,7 @@ nav .nav-o .nright ul .nomre:hover {
 .section2 {
   width: 100%;
   padding: 30px 0px;
-  background-color: #ebf8e6;
+  background-color: #abb6a8;
 }
 .section2 .section2-o {
   display: flex;
@@ -747,11 +747,11 @@ nav .nav-o .nright ul .nomre:hover {
 }
 
 .text-uppercase {
-  color: #ebf8e6;
+  color: #abb6a8;
 }
 
 .nav-pills .nav-link.active {
-  background-color: #ebf8e6 !important;
+  background-color: #abb6a8 !important;
   color: #222222 !important;
 }
 
@@ -1000,19 +1000,19 @@ nav .nav-o .nright ul .nomre:hover {
   display: inline-block;
   padding: 10px 20px;
   background-color: transparent;
-  border: 2px solid #ebf8e6;
-  color: #ebf8e6;
+  border: 2px solid #abb6a8;
+  color: #abb6a8;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .event .btn:hover {
-  background-color: #ebf8e6;
+  background-color: #abb6a8;
   color: #fff;
 }
 .event .btn-secondary {
   margin-top: 30px;
-  background-color: #ebf8e6;
+  background-color: #abb6a8;
   color: #fff;
 }
 .event .btn-secondary ion-icon {
@@ -1127,7 +1127,7 @@ Kart içeriğini ortala */
 }
 .caruselslide .card .hekimebaxbuttonu {
   border: none;
-  background-color: #ebf8e6;
+  background-color: #abb6a8;
   padding: 5px 10px;
   border-radius: 50px;
 }
@@ -1139,7 +1139,7 @@ Kart içeriğini ortala */
 }
 
 .caruselslide .card .img {
-  background-color: #ebf8e6;
+  background-color: #abb6a8;
   height: 148px;
   width: 148px;
   border-radius: 50%;
@@ -1326,7 +1326,6 @@ Kart içeriğini ortala */
 }
 .user-wrapper .user-table {
   width: calc(100% - 250px);
-  background: #252525;
   border-radius: 10px;
 }
 .user-wrapper .user-table h1 {
@@ -1347,12 +1346,8 @@ Kart içeriğini ortala */
   width: 99%;
   margin: 10px auto;
   border-collapse: collapse;
-  background: #444444;
   border-radius: 5px;
   overflow: hidden;
-}
-.user-wrapper .user-table table tr:nth-child(even) {
-  background: #505050;
 }
 .user-wrapper .user-table table tr th {
   background: rgb(104, 104, 104);
@@ -1404,7 +1399,7 @@ Kart içeriğini ortala */
 }
 
 aside {
-  background-color: rgb(76, 106, 96);
+  background-color: rgb(158, 185, 176);
   width: 250px;
   height: calc(100vh - 66px);
   transition: all 0.5s ease;

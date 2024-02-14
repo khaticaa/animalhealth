@@ -98,14 +98,14 @@
       "name": " Scinnez Bird",
       "price": 792,
       "isFavorite": true,
-      "inBasket": 3
+      "inBasket": 1
     },
     {
       "id": 2,
       "image": "../assets/images/pr-6.jpg",
       "name": "Cat scinnez ",
       "price": 179,
-      "isFavorite": false,
+      "isFavorite": true,
       "inBasket": 1
     },
     {
@@ -113,15 +113,16 @@
       "image": "../assets/images/pr-3.jpg",
       "name": "Cat scinnez Bird",
       "price": 479,
-      "isFavorite": true,
-      "inBasket": 1
+      "isFavorite": false,
+      "inBasket": 1,
+      "Id": 2
     },
     {
       "id": 4,
       "image": "../assets/images/pr-4.jpg",
       "name": "Home",
       "price": 79,
-      "isFavorite": false,
+      "isFavorite": true,
       "inBasket": 1
     },
     {
@@ -129,7 +130,7 @@
       "image": "../assets/images/pr-1.jpg",
       "name": " Innez Bird",
       "price": 2279,
-      "isFavorite": false,
+      "isFavorite": true,
       "inBasket": 1
     },
     {
@@ -137,15 +138,15 @@
       "image": "../assets/images/pr-1.jpg",
       "name": "Cat scinnez Bird",
       "price": 379,
-      "isFavorite": false
+      "isFavorite": false,
+      "inBasket": 1
     },
     {
       "id": 7,
       "image": "../assets/images/pr-1.jpg",
       "name": "Cat scinnez Bird",
       "price": 779,
-      "isFavorite": false,
-      "inBasket": 1
+      "isFavorite": false
     }
   ],
   "doctor": [
@@ -210,8 +211,10 @@
       "mail": "xedice@gmail.com",
       "password": "123",
       "fav": [],
+      "basket": [],
       "Id": [],
-      "id": 2
+      "id": 2,
+      "isFavorite": false
     },
     {
       "name": "xedice",
@@ -227,15 +230,128 @@
       "password": "123",
       "fav": [],
       "Id": [],
-      "id": 4
+      "id": 4,
+      "inBasket": 1
     },
     {
-      "name": "khaticaa",
-      "mail": "xedice@gmail.com",
+      "name": "ebulfez",
+      "mail": "ebulfez@gmail.com",
       "password": "123",
       "fav": [],
-      "Id": [],
-      "id": 5
+      "Id": [
+        {
+          "id": 1,
+          "image": "../assets/images/pr-1.jpg",
+          "name": " Scinnez Bird",
+          "price": 792,
+          "isFavorite": true,
+          "inBasket": 4
+        },
+        {
+          "id": 2,
+          "image": "../assets/images/pr-6.jpg",
+          "name": "Cat scinnez ",
+          "price": 179,
+          "isFavorite": false,
+          "inBasket": 2
+        }
+      ],
+      "id": 6,
+      "k": 2,
+      "inBasket": 4
+    },
+    {
+      "name": "Cavidan",
+      "mail": "ebulfez@gmail.com",
+      "password": "123",
+      "fav": [],
+      "Id": [
+        {
+          "id": 1,
+          "image": "../assets/images/pr-1.jpg",
+          "name": " Scinnez Bird",
+          "price": 792,
+          "isFavorite": true,
+          "inBasket": 5
+        },
+        {
+          "id": 4,
+          "image": "../assets/images/pr-4.jpg",
+          "name": "Home",
+          "price": 79,
+          "isFavorite": false,
+          "inBasket": 1
+        },
+        {
+          "id": 2,
+          "image": "../assets/images/pr-6.jpg",
+          "name": "Cat scinnez ",
+          "price": 179,
+          "isFavorite": false,
+          "inBasket": 1
+        },
+        {
+          "id": 3,
+          "image": "../assets/images/pr-3.jpg",
+          "name": "Cat scinnez Bird",
+          "price": 479,
+          "isFavorite": false,
+          "inBasket": 1,
+          "Id": 2
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "Cavidan1",
+      "mail": "ebulfez@gmail.com",
+      "password": "11",
+      "fav": [],
+      "Id": [
+        {
+          "id": 1,
+          "image": "../assets/images/pr-1.jpg",
+          "name": " Scinnez Bird",
+          "price": 792,
+          "isFavorite": false,
+          "inBasket": 1
+        },
+        {
+          "id": 2,
+          "image": "../assets/images/pr-6.jpg",
+          "name": "Cat scinnez ",
+          "price": 179,
+          "isFavorite": false,
+          "inBasket": 1
+        }
+      ],
+      "id": 8,
+      "isFavorite": false
+    },
+    {
+      "name": "Cavidan23",
+      "mail": "ebulfez@gmail.com",
+      "password": "123",
+      "fav": [],
+      "Id": [
+        {
+          "id": 5,
+          "image": "../assets/images/pr-1.jpg",
+          "name": " Innez Bird",
+          "price": 2279,
+          "isFavorite": true,
+          "inBasket": 1
+        },
+        {
+          "id": 2,
+          "image": "../assets/images/pr-6.jpg",
+          "name": "Cat scinnez ",
+          "price": 179,
+          "isFavorite": true,
+          "inBasket": 1
+        }
+      ],
+      "id": 9
     }
   ],
   "siparisler": [
@@ -279,7 +395,49 @@
         }
       ],
       "total": 6171,
-      "id": 1
+      "id": 3
+    },
+    {
+      "orders": [
+        {
+          "id": 1,
+          "name": " Scinnez Bird",
+          "price": 792,
+          "quantity": 3
+        },
+        {
+          "id": 2,
+          "name": "Cat scinnez ",
+          "price": 179,
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "Cat scinnez Bird",
+          "price": 479,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Home",
+          "price": 79,
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "name": " Innez Bird",
+          "price": 2279,
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "name": "Cat scinnez Bird",
+          "price": 779,
+          "quantity": 1
+        }
+      ],
+      "total": 6171,
+      "id": 4
     }
   ]
 }

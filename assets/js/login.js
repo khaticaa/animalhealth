@@ -33,6 +33,9 @@ x.addEventListener("click",()=>{
 })
 
 
+
+
+
 let url = "http://localhost:3000/acount";
 let nameInp = document.querySelector("#upname");
 let mailInp = document.querySelector("#upmail");

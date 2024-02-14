@@ -294,7 +294,8 @@ span{
 
 .section2{width: 100%;
   padding: 30px 0px;
-  background-color: #ebf8e6;
+  // background-color: #ebf8e6;
+  background-color: $deyis;
   .section2-o{
 display: flex;
 align-items: center;
@@ -416,11 +417,12 @@ text-align: center;
   color: #6c6c6c !important;
 }
 .text-uppercase{
-  color: #ebf8e6;
+  // color: #ebf8e6;
+  color: #abb6a8;
 }
 
 .nav-pills .nav-link.active{
-background-color: #ebf8e6 !important;
+background-color: #abb6a8!important;
 color: #222222 !important;
 }
 
@@ -775,21 +777,21 @@ color: #222222 !important;
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
-    border: 2px solid #ebf8e6;
-    color:#ebf8e6;
+    border: 2px solid #abb6a8;
+    color:$deyis;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 
   .btn:hover {
-    background-color: #ebf8e6;
+    background-color: $deyis;
     color: #fff;
   }
 
   .btn-secondary {
     margin-top: 30px;
-    background-color: #ebf8e6;
+    background-color: $deyis;
     color: #fff;
   }
 
@@ -1005,7 +1007,7 @@ color: #222222 !important;
   border-radius: 8px;
   .hekimebaxbuttonu{
     border: none;
-    background-color: #ebf8e6;
+    background-color: $deyis;
     padding: 5px 10px;
     border-radius: 50px;
 
@@ -1020,7 +1022,7 @@ color: #222222 !important;
 }
 .caruselslide .card .img {
   // background: #8B53FF;
-  background-color: #ebf8e6;
+  background-color: $deyis;
   height: 148px;
   width: 148px;
   border-radius: 50%;
@@ -1588,7 +1590,7 @@ padding: 20px;
 
   .user-table {
     width: calc(100% - 250px);
-    background: #252525;
+    // background: #252525;
     border-radius: 10px;
     h1 {
       
@@ -1610,13 +1612,13 @@ padding: 20px;
       width: 99%;
       margin: 10px auto;
       border-collapse: collapse;
-      background: #444444;
+      // background: #444444;
       border-radius: 5px;
       overflow: hidden;
       tr {
       //   color: $white;
         &:nth-child(even) {
-          background: #505050;
+          // background: #505050;
         }
         th {
           background: rgb(104, 104, 104);
@@ -1846,7 +1848,8 @@ padding: 20px;
     // top:-10px;
   //   background: $primary-color;
   // background-color: rgb(120, 181, 161);  
-  background-color: rgb(76, 106, 96);  
+  // background-color: rgb(76, 106, 96);  
+  background-color: rgb(158, 185, 176);  
   // background-color:black;
     width: 250px;
     height: calc(100vh - 66px);

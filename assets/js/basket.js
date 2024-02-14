@@ -34,12 +34,16 @@ let removeCount = async (id,inBasket) => {
 
 }
 
+let account = JSON.parse(localStorage.getItem('currentUser'))
+
+
 async function getAllCards() {
-  let res = await axios.get("http://localhost:3000/shop/");
+  let res = await axios.get("http://localhost:3000/acount/");
   let data = await res.data;
-  
+  const currentUserInfo = data.find(user => user.name === account.name).Id;
+  cards.innerHTML=""
   filteredArr = filteredArr.length ? filteredArr : data;
-  filteredArr.forEach((el) => {
+  currentUserInfo.forEach((el) => {
     if (el.inBasket) {
       emptyAlert.style.display = 'none'
       cards.innerHTML += `
@@ -128,7 +132,8 @@ getAllCards();
 // Submit butonuna tıklandığında işlemleri gerçekleştir
 document.getElementById('submitBtn').addEventListener('click', async () => {
   // Sepetteki ürünleri ve toplam fiyatı al
-  let res = await axios.get("http://localhost:3000/shop/");
+  let res = await axios.get("http://localhost:3000/acount/");
+  const currentUserInfo = data.find(user => user.name === account.name);
   let data = await res.data;
   let total = 0;
   let orders = [];
@@ -156,7 +161,7 @@ document.getElementById('submitBtn').addEventListener('click', async () => {
   } catch (error) {
     console.error('Veriler gönderilirken bir hata oluştu:', error);
   }
-
+  
   // Sayfayı yenile
   window.location.reload();
 });
