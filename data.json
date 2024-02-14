@@ -98,7 +98,7 @@
       "name": " Scinnez Bird",
       "price": 792,
       "isFavorite": true,
-      "inBasket": 1
+      "inBasket": 2
     },
     {
       "id": 2,
@@ -106,15 +106,15 @@
       "name": "Cat scinnez ",
       "price": 179,
       "isFavorite": true,
-      "inBasket": 1
+      "inBasket": 2
     },
     {
       "id": 3,
       "image": "../assets/images/pr-3.jpg",
       "name": "Cat scinnez Bird",
       "price": 479,
-      "isFavorite": false,
-      "inBasket": 1,
+      "isFavorite": true,
+      "inBasket": 2,
       "Id": 2
     },
     {
@@ -123,7 +123,7 @@
       "name": "Home",
       "price": 79,
       "isFavorite": true,
-      "inBasket": 1
+      "inBasket": 2
     },
     {
       "id": 5,
@@ -210,9 +210,46 @@
       "name": "xedice",
       "mail": "xedice@gmail.com",
       "password": "123",
-      "fav": [],
+      "fav": [
+        2,
+        3
+      ],
       "basket": [],
-      "Id": [],
+      "Id": [
+        {
+          "id": 1,
+          "image": "../assets/images/pr-1.jpg",
+          "name": " Scinnez Bird",
+          "price": 792,
+          "isFavorite": false,
+          "inBasket": 1
+        },
+        {
+          "id": 2,
+          "image": "../assets/images/pr-6.jpg",
+          "name": "Cat scinnez ",
+          "price": 179,
+          "isFavorite": false,
+          "inBasket": 3
+        },
+        {
+          "id": 4,
+          "image": "../assets/images/pr-4.jpg",
+          "name": "Home",
+          "price": 79,
+          "isFavorite": true,
+          "inBasket": 1
+        },
+        {
+          "id": 3,
+          "image": "../assets/images/pr-3.jpg",
+          "name": "Cat scinnez Bird",
+          "price": 479,
+          "isFavorite": true,
+          "inBasket": 2,
+          "Id": 2
+        }
+      ],
       "id": 2,
       "isFavorite": false
     },
@@ -352,6 +389,26 @@
         }
       ],
       "id": 9
+    },
+    {
+      "name": "XediceMirzoeva",
+      "mail": "xedice@gmail.com",
+      "password": "123",
+      "fav": [
+        1,
+        2
+      ],
+      "Id": [
+        {
+          "id": 1,
+          "image": "../assets/images/pr-1.jpg",
+          "name": " Scinnez Bird",
+          "price": 792,
+          "isFavorite": false,
+          "inBasket": 3
+        }
+      ],
+      "id": 10
     }
   ],
   "siparisler": [

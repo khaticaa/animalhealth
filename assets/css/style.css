@@ -639,7 +639,7 @@ nav .nav-o .nright ul .nomre:hover {
 .section2 {
   width: 100%;
   padding: 30px 0px;
-  background-color: #abb6a8;
+  background-color: #96a293;
 }
 .section2 .section2-o {
   display: flex;
@@ -1001,18 +1001,18 @@ nav .nav-o .nright ul .nomre:hover {
   padding: 10px 20px;
   background-color: transparent;
   border: 2px solid #abb6a8;
-  color: #abb6a8;
+  color: #96a293;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .event .btn:hover {
-  background-color: #abb6a8;
+  background-color: #96a293;
   color: #fff;
 }
 .event .btn-secondary {
   margin-top: 30px;
-  background-color: #abb6a8;
+  background-color: #96a293;
   color: #fff;
 }
 .event .btn-secondary ion-icon {
@@ -1127,7 +1127,7 @@ Kart içeriğini ortala */
 }
 .caruselslide .card .hekimebaxbuttonu {
   border: none;
-  background-color: #abb6a8;
+  background-color: #96a293;
   padding: 5px 10px;
   border-radius: 50px;
 }
@@ -1139,7 +1139,7 @@ Kart içeriğini ortala */
 }
 
 .caruselslide .card .img {
-  background-color: #abb6a8;
+  background-color: #96a293;
   height: 148px;
   width: 148px;
   border-radius: 50%;
@@ -1193,7 +1193,7 @@ Kart içeriğini ortala */
 }
 
 .section3 {
-  background-color: #ebf8e6;
+  background-color: #96a293;
   width: 100%;
   min-height: 100vh;
   padding: 50px 0;

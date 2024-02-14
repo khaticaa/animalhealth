@@ -83,46 +83,7 @@ getAllCards();
 //   axios.delete(shop+ id).then(res=>window.location.reload())
 // }
 
-// document.getElementById('submitBtn').addEventListener('click', async () => {
-//   // Sepetteki ürünleri ve toplam fiyatı al
-//   let res = await axios.get("http://localhost:3000/shop/");
-//   let data = await res.data;
-//   let total = 0;
-//   let orders = [];
 
-//   data.forEach(product => {
-//     if (product.inBasket) {
-//       orders.push({
-//         id: product.id,
-//         name: product.name,
-//         price: product.price,
-//         quantity: product.inBasket
-//       });
-//       total += product.price * product.inBasket;
-//     }
-
-   
-//   });
-
-//   // Sipariş verilerini gönder
-//   try {
-//     await axios.post('http://localhost:3000/siparisler', orders);
-//     console.log('Siparişler başarıyla gönderildi.');
-//   } catch (error) {
-//     console.error('Siparişler gönderilirken bir hata oluştu:', error);
-//   }
-
-//   // Toplam fiyatı da gönder
-//   try {
-//     await axios.post('http://localhost:3000/toplam', { total: total });
-//     console.log('Toplam fiyat başarıyla gönderildi.');
-//   } catch (error) {
-//     console.error('Toplam fiyat gönderilirken bir hata oluştu:', error);
-//   }
-
-//   // Sayfayı yenile
-//   window.location.reload();
-// });
 
 
 
@@ -162,7 +123,7 @@ document.getElementById('submitBtn').addEventListener('click', async () => {
     console.error('Veriler gönderilirken bir hata oluştu:', error);
   }
   
-  // Sayfayı yenile
+ 
   window.location.reload();
 });
 
@@ -190,61 +151,6 @@ document.getElementById('submitBtn').addEventListener('click', async () => {
 
 
 
-// axios.get('http://localhost:3000/shop')
-// .then(response => {
-//     const products = response.data.filter(product => product.inBasket); // Sepetteki ürünler
-//     const selectElement = document.getElementById('selectedProducts');
-
-//     // Sepetteki her bir ürün için bir option elementi oluşturun ve seçili ürünlerin adlarını ekleyin
-//     products.forEach(product => {
-//         const option = document.createElement('option');
-//         option.value = product.id; // Opsiyon değeri olarak ürün ID'sini kullanabilirsiniz
-//         option.textContent = product.name; // Opsiyon metni olarak ürün adını kullanın
-//         selectElement.appendChild(option); // Seçenekleri seçili ürünlerin listesi için select elementine ekleyin
-//     });
-// })
-// .catch(error => {
-//     console.error('Error fetching products:', error);
-// });
-
-
-
-
-
-
-
-
-
-
-
-// // Örnek bir sepet dizisi
-// const basketItems = [
-//   { id: 1, name: "Ürün 1" },
-//   { id: 2, name: "Ürün 2" },
-//   { id: 3, name: "Ürün 3" },
-//   { id: 4, name: "Ürün 4" }
-// ];
-
-// // <select> öğesini hedefleyin
-// const selectElement = document.getElementById('selectedProducts');
-
-// // Sepetteki her ürün için bir <option> öğesi oluşturun ve <select> öğesine ekleyin
-// basketItems.forEach(item => {
-//   const option = document.createElement('option');
-//   option.value = item.id; // Opsiyon değeri olarak ürün ID'sini kullanabilirsiniz
-//   option.textContent = item.name; // Opsiyon metni olarak ürün adını kullanın
-//   selectElement.appendChild(option); // Seçenekleri seçili ürünlerin listesi için <select> öğesine ekleyin
-// });
-
-// // Submit düğmesine tıklandığında işlem yap
-// document.getElementById('submitBtn').addEventListener('click', function() {
-//   // Seçili ürünün ID'sini alın
-//   const selectedProductId = selectElement.value;
-//   // Bu veriyi sunucuya gönderin (simülasyon)
-//   console.log("Selected Product ID:", selectedProductId);
-//   // Burada sunucuya veri gönderme işlemini gerçekleştirebilirsiniz.
-//   // Örneğin, fetch API'sini kullanarak bir POST isteği gönderebilirsiniz.
-// });
 
 
 
