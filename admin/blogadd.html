@@ -4,6 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+    
+            .add {
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            label {
+                margin-top: 10px;
+                font-weight: bold;
+            }
+    
+            input[type="file"] {
+                margin-bottom: 20px;
+            }
+    
+            .rounded-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 20px;
+                border: 2px solid #ddd;
+            }
+    
+            #rounded-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            input[type="text"],
+            input[type="number"] {
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                width: 100%;
+            }
+    
+            p.error-message {
+                display: none;
+                color: red;
+                margin-bottom: 10px;
+            }
+    
+            #add {
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            table {
+                margin: 20px auto;
+                border-collapse: collapse;
+                width: 100%;
+                max-width: 600px;
+            }
+    
+            table, th, td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+            }
+    
+            th {
+                background-color: #007bff;
+                color: #fff;
+            }
+    
+            td button {
+                padding: 5px 10px;
+                background-color: #dc3545;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </style>
 </head>
 <body>
     <section class="add">

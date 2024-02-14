@@ -1144,8 +1144,7 @@ Kart içeriğini ortala */
   width: 148px;
   border-radius: 50%;
 }
-
-.card .img img {
+.caruselslide .card .img img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -1316,8 +1315,13 @@ Kart içeriğini ortala */
     height: 175px;
   }
 }
+@media screen and (max-width: 540px) {
+  .dasboard .img img {
+    display: none;
+  }
+}
 .user-wrapper {
-  background-color: #444444;
+  background-color: #e6cdcd;
   width: 100%;
   flex-direction: column;
   display: flex;
@@ -1350,7 +1354,7 @@ Kart içeriğini ortala */
   overflow: hidden;
 }
 .user-wrapper .user-table table tr th {
-  background: rgb(104, 104, 104);
+  background: rgb(158, 185, 176);
   text-align: left;
   padding: 10px;
 }
@@ -1370,7 +1374,7 @@ Kart içeriğini ortala */
   padding: 10px 15px;
 }
 .user-wrapper .user-table table tr td button:last-child {
-  background: red;
+  background-color: rgb(158, 185, 176);
 }
 .user-wrapper .user-table table tr td button:last-child:hover {
   color: red;
@@ -1472,8 +1476,12 @@ aside .menu li button i {
 }
 .addhissesi button {
   padding: 5px 10px;
-  background-color: #343434;
+  background-color: rgb(158, 185, 176);
   color: white;
+}
+.addhissesi button a {
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .d-flex a {
@@ -1486,4 +1494,16 @@ aside .menu li button i {
 
 .text-white {
   text-decoration: none;
+}
+
+@media screen and (max-width: 786px) {
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  aside {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
