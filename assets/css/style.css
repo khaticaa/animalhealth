@@ -779,6 +779,16 @@ nav .nav-o .nright ul .nomre:hover {
   .banner .bannertext h3 {
     font-size: 30px;
   }
+  .banner .bannertext2 {
+    width: 400px;
+    gap: 0;
+  }
+  .banner .bannertext2 h2 {
+    font-size: 50px;
+  }
+  .banner .bannertext2 h3 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   nav #click {
@@ -841,6 +851,25 @@ nav .nav-o .nright ul .nomre:hover {
   .banner .bannertext h3 {
     font-size: 30px;
   }
+  .banner .bannertext2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    gap: 0;
+  }
+  .banner .bannertext2 h2 {
+    font-size: 50px;
+  }
+  .banner .bannertext2 h3 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 550px) {
   .banner .bannertext {
@@ -870,6 +899,35 @@ nav .nav-o .nright ul .nomre:hover {
     font-size: 16px;
   }
   .banner .bannertext .apbutton button {
+    font-size: 16px;
+  }
+  .banner .bannertext2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    gap: 0;
+  }
+  .banner .bannertext2 h2 {
+    font-size: 30px;
+  }
+  .banner .bannertext2 h3 {
+    font-size: 20px;
+  }
+  .banner .bannertext2 p {
+    font-size: 16px;
+  }
+  .banner .bannertext2 .apbutton {
+    font-size: 16px;
+    font-size: 16px;
+  }
+  .banner .bannertext2 .apbutton button {
     font-size: 16px;
   }
   .section1 .section1-o .s1bottom {
@@ -1505,5 +1563,104 @@ aside .menu li button i {
   }
   aside {
     display: none;
+  }
+}
+.user-table {
+  width: calc(100% - 250px);
+  border-radius: 10px;
+}
+.user-table h1 {
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+}
+.user-table .table-body {
+  width: 100%;
+  height: calc(100vh - 156px);
+  overflow: auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+.user-table .table-body::-webkit-scrollbar {
+  height: 5px;
+}
+.user-table table {
+  width: 99%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.user-table table tr:nth-child(even) {
+  background: #505050;
+}
+.user-table table tr th {
+  background: rgb(158, 185, 176);
+  text-align: left;
+  padding: 10px;
+}
+.user-table table tr td {
+  padding: 10px 20px;
+}
+.user-table table tr td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 999px;
+}
+.user-table table tr td button {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.user-table table tr td button:last-child {
+  background-color: rgb(158, 185, 176);
+}
+.user-table table tr td button:last-child:hover {
+  color: red;
+}
+.user-table table tr tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 992px) {
+  .user-table {
+    width: 100%;
+  }
+  .user-table h1 {
+    padding: 10px;
+  }
+  .user-table .table-body {
+    height: auto;
+    max-height: 400px;
+  }
+  .user-table table th,
+  .user-table table td {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .user-table table button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 768px) {
+  .user-table {
+    width: 100%;
+  }
+  .user-table h1 {
+    padding: 10px;
+  }
+  .user-table .table-body {
+    height: auto;
+    max-height: 400px;
+  }
+  .user-table table th,
+  .user-table table td {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .user-table table button {
+    font-size: 16px;
+    padding: 8px 12px;
   }
 }/*# sourceMappingURL=style.css.map */
